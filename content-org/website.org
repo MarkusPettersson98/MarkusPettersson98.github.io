@@ -57,4 +57,5 @@ Maybe I'll get around to document my foray into ergonomic keyboards, or write ab
 
 Until next time.
 
+#+CAPTION: https://xkcd.com/741/
 [[file:images/blog/initial-commit/xkcd.png]]

@@ -16,4 +16,4 @@ Maybe I'll get around to document my foray into ergonomic keyboards, or write ab
 
 Until next time.
 
-{{< figure src="/ox-hugo/xkcd.png" >}}
+{{< figure src="/ox-hugo/xkcd.png" caption="<span class=\"figure-number\">Figure 1: </span><https://xkcd.com/741/>" >}}

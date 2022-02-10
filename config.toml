@@ -5,6 +5,11 @@ languageLang = 'en'
 theme = 'bearblog'
 enableRobotsTXT = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 author = 'Markus Pettersson'
 title = "Markus' place on the web ☯"
 

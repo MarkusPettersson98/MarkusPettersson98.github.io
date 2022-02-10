@@ -58,3 +58,7 @@ footer .theme-by {
 figure {
     text-align: center;
 }
+/* Hide figure number by default */
+.figure-number {
+  display: none;
+}
