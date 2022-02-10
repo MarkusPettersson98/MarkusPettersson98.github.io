@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(244, 244, 244);
+}
+
+footer {
+  padding: 30px 0;
+  /* border-top: 1px #EAEAEA solid; */
+  margin-top: auto;
+  font-size: 14px;
+}
+
+footer a {
+  color: #404040;
+}
+
+footer .list-inline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline > li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .copyright {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+}
+footer .theme-by {
+  text-align: center;
+  margin: 10px 0 0;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    padding: 50px 0;
+  }
+  footer .footer-links {
+    font-size: 18px;
+  }
+  footer .copyright {
+    font-size: 16px;
+  }
+}
+
+.inline-svg {
+  display: inline-block;
+  height: 2.15rem;
+  width: 2.15rem;
+  top: 0.15rem;
+  position: relative;
+}
+
+/* These are images referenced via Org. */
+figure {
+    text-align: center;
+}

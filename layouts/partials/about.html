@@ -1,0 +1,12 @@
+<!-- List contact information -->
+<ul class="list-inline text-center footer-links">
+{{ range .Site.Data.social.social_icons }}
+    {{- if isset $.Site.Social .id }}
+        <li><a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}"> {{ partial "fa.html" (.id) }}</a></li>
+    {{- end -}}
+{{ end }}
+</ul>
+<!-- Acknowledgement -->
+<div class="acknowledgement">
+  The style of this site is heavily influenced by <a href="https://bearblog.dev/">Bear Blog ʕ•ᴥ•ʔ</a> by <a href="https://herman.bearblog.dev/">Herman Martinus</a>.
+</div>

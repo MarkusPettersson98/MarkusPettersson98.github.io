@@ -1,0 +1,47 @@
+[[social_icons]]
+id = "email"
+url = "mailto:%s"
+title = "Email me"
+icon = "fas fa-envelope"
+
+[[social_icons]]
+id = "github"
+url = "https://github.com/%s"
+title = "GitHub"
+icon = "fab fa-github"
+
+[[social_icons]]
+id = "gitlab"
+url = "https://gitlab.com/%s"
+title = "GitLab"
+icon = "fab fa-gitlab"
+
+[[social_icons]]
+id = "twitter"
+url = "https://twitter.com/%s"
+title = "Twitter"
+icon = "fab fa-twitter"
+
+[[social_icons]]
+id = "reddit"
+url = "https://reddit.com/u/%s"
+title = "Reddit"
+icon = "fab fa-reddit-alien"
+
+[[social_icons]]
+id = "linkedin"
+url = "https://linkedin.com/in/%s"
+title = "LinkedIn"
+icon = "fab fa-linkedin"
+
+[[social_icons]]
+id = "stackoverflow"
+url = "https://stackoverflow.com/%s"
+title = "StackOverflow"
+icon = "fab fa-stack-overflow"
+
+[[social_icons]]
+id = "keybase"
+url = "https://keybase.io/%s"
+title = "Keybase"
+icon = "fab fa-keybase"

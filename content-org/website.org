@@ -1,0 +1,62 @@
+#+TITLE: Markus Pettersson Personal Site
+#+AUTHOR: Markus Pettersson
+
+#+HUGO_BASE_DIR: ../
+#+OPTIONS: creator:t toc:nil
+
+* Frontpage
+:PROPERTIES:
+:EXPORT_TITLE: Home
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: _index
+:END:
+
+Welcome stranger!
+I'm Markus ☯.
+
+This is where I share pieces of myself: [[/blog][Blog posts]], [[/resume][my resume]], open source projects and so on.
+
+* About
+:PROPERTIES:
+:EXPORT_TITLE: About
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_MENU: :menu main
+:END:
+The style of this site is heavily influenced by [[https://bearblog.dev/][Bear Blog ʕ•ᴥ•ʔ]] by [[https://herman.bearblog.dev/][Herman Martinus]].
+
+* Resume
+:PROPERTIES:
+:EXPORT_TITLE: Resume
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: resume
+:EXPORT_HUGO_MENU: :menu main
+:END:
+
+Find attached, my resume:
+
+TODO: Insert resume.
+
+TODO: Insert link to source code.
+
+* Blog
+:PROPERTIES:
+:EXPORT_TITLE: Blog
+:EXPORT_HUGO_SECTION: /blog
+:END:
+** Initial Commit
+:PROPERTIES:
+:EXPORT_FILE_NAME: initial-commit
+:EXPORT_DATE: 2022-02-10
+:END:
+This marks the start of my very own personal blog. Finally.
+
+I intended to start this project way back when [[https://blog.google/technology/developers/hello-dev/][Google released .dev domains to the public]].
+I managed to register a =.dev= domain containing my name for several years without doing anything fruitful with it. I even managed to talk a friend into buying such a domain for himself, with the promise that I would host his personal website for him. How time flies.
+
+I do not know what this site will be used for, except for hosting my resume, a few links to portfolis such as Github, and maybe a GPG fingerprint in case anyone would care.
+Maybe I'll get around to document my foray into ergonomic keyboards, or write about esoteric programming languages I find interesting.
+
+Until next time.
+
+[[file:images/blog/initial-commit/xkcd.png]]

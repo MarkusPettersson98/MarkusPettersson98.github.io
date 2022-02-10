@@ -1,0 +1,24 @@
+#+TITLE: Help
+
+This document contains references & TODOs around my website (Hugo).
+
+* References
+These references were used a lot (!) during assembly of this site.
++ https://ox-hugo.scripter.co/
++ https://ox-hugo.scripter.co/doc/why-ox-hugo/
++ https://raw.githubusercontent.com/kaushalmodi/ox-hugo/main/doc/ox-hugo-manual.org
++ https://github.com/janraasch/hugo-bearblog
+
+
+* TODOs
+** TODO Search Engine Optimize
+Look into adding tags to the config file.
+See [[https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/seo_tags.html][this source file]] for inspiration.
+** TODO ox-hugo
++ Set the ~org-hugo-base-dir~ variable in a ~.dir-locals.el~ or File Local Variables.
+
+** TODO Add GPG Fingerprint
+I did mention this in my [[file:~/Projects/me/site/content/blog/initial-commit.md][first blog post]].
+
+** TODO Add Keyboards
+It would be fun to document / discuss keyboards on my site.

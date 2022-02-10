@@ -1,18 +1,20 @@
 baseURL = 'https://koncis.nu/'
 languageCode = 'en-us'
 languageLang = 'en'
-title = "Markus' place on the web"
-author = 'Markus Pettersson'
-theme = 'hermit'
 
-contentdir = 'content'
-layoutdir  = 'layouts'
-publishdir = 'public'
+theme = 'bearblog'
+enableRobotsTXT = true
+
+author = 'Markus Pettersson'
+title = "Markus' place on the web ☯"
 
 [params]
-Title = "Markus' place on the web"
-Tagline = "Libre Software, Functional Programming & Engineering Optimism"
+    description = "Libre Software, Functional Programming & Engineering Optimism"
+    tags = ["blog"]
+    hideMadeWithLine = true
+    custom_css = ["css/main.css"]
 
-[params.Handles]
-Github = 'markuspettersson98'
-Email = 'markus.pettersson1998@gmail.com'
+[social]
+    name = "Markus Pettersson"
+    github = "markuspettersson98"
+    email = "markus.pettersson1998@gmail.com"
