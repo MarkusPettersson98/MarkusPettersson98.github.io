@@ -1,3 +1,18 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://koncis.nu/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageLang = 'en'
+title = "Markus' place on the web"
+author = 'Markus Pettersson'
+theme = 'hermit'
+
+contentdir = 'content'
+layoutdir  = 'layouts'
+publishdir = 'public'
+
+[params]
+Title = "Markus' place on the web"
+Tagline = "Libre Software, Functional Programming & Engineering Optimism"
+
+[params.Handles]
+Github = 'markuspettersson98'
+Email = 'markus.pettersson1998@gmail.com'
