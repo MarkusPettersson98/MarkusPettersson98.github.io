@@ -33,11 +33,9 @@ The style of this site is heavily influenced by [[https://bearblog.dev/][Bear Bl
 :EXPORT_HUGO_MENU: :menu main
 :END:
 
-Find attached, my resume:
+Find attached, [[file:~/Projects/me/site/static/cv.pdf][my resume]].
 
-TODO: Insert resume.
-
-TODO: Insert link to source code.
+(And of course, the source{[[/cv.tex][.tex]], [[/cv.txt][.txt]]}. Simply compile with ~pdflatex cv.tex~.)
 
 * Blog
 :PROPERTIES:

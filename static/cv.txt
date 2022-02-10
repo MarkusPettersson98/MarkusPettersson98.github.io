@@ -1,0 +1,63 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+\name{Markus}{Pettersson}
+\title{Computer Science Student}                               
+\address{Luftvärnsvägen 2}{415 27 Göteborg}{Sweden}
+\phone[fixed]{+46~725~207~118}
+\email{markus.pettersson1998@gmail.com}  
+\social[github]{MarkusPettersson98}
+
+% Be gone, compilation errors
+\recipient{\mbox{}}{}
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+\section{Education}
+\cventry{2020--present}{M.Sc. Computer Science - Algorithms, languages and logic}{Chalmers University of Technology}{Gothenburg}{}{{}Computer Science is a master degree program with the main focus on the foundations in the science of programming. I am focusing my education towards compilers and programming language design, which heavily emphasises logic, reasoning and functional programming. }
+\cventry{Spring 2020}{Bachelor Thesis}{Chalmers University of Technology}{Gothenburg}{}{{}
+Dynamically Recompiling Emulator.
+The thesis examined the possibility to retarget machine code compiled for a classic 8-bit processor (MOS 6502) to modern systems by leveraging libraries for compilation and optimizations from the LLVM compiler framework. A JIT-compiler was successfully developed and presented in May 2020.}
+\cventry{2017--2020}{B.Sc Software Engineering}{Chalmers University of Technology}{Gothenburg}{}{{}}
+
+% Relevant Experience(s)
+\section{Experience}
+\cventry{2021}{Backend Web Developer}{Tele Radio}{}{Gothenburg}{Summer internship as a backend developer within the Business Software team at Tele Radio. During my stay, two new internal applications with a focus on automation and standardization of accounting and document management were developed using the Django web framework. These services were successfully deployed to Tele Radio's intranet. Some old services also received maintenance and patches.}
+\cvitemwithcomment{}{\underline{Programming languages}: Python (Django), Javascript}{}
+\cvitemwithcomment{}{\underline{Other services used}: AWS (ECS, S3), Docker}{}
+
+
+\cventry{2020}{Report Management System for truck drivers}{Markus Pettersson}{}{Gothenburg}{A mobile application with focus on ease for truck drivers was designed, developed and delivered through my then newly founded company. In collaboration with the owner of a small-sized truck driving company, we identified the need for a better Report Management System for reporting common errors which drivers could face during their day-to-day work. The app has been in use company-wide since it was launched. I taught myself how to launch an application on the Android and iOS platforms, as well as how to develop and interface with native code through a React Native application.}
+\cvitemwithcomment{}{\underline{Programming languages}: Javascript (React Native), Kotlin, Swift.}{}
+\cvitemwithcomment{}{\underline{Other services used}: Firebase, Google Play, App Store.}{}
+
+% Other Experience(s)
+\cventry{2018}{Canoe instructor}{Arvika Kanotcenter}{}{Arvika}{The work was very social and mostly outdoors. It included greeting \& taking care of arriving customers, teaching them to properly handle a canoe by themselves, make sure that they got back safely and generally taking care of equipment as well as people. It taught me multitasking, to remain calm when others were stressed or freaked out and how to communicate effectively in english (majority of customers and co-workers came from abroad).}
+
+\cventry{2017}{Supermarket employee}{Ica Nära Edane}{}{Arvika}{The work consisted of shelving products, taking care of incoming and outgoing shipments of food and parcels and keeping the supermarket clean \& tidy. Most of the work was customer-facing, which meant that one would have to stay remain calm and display a positive attitude for prolonged periods of time. It taught me to be punctual, disciplined and to enjoy even the briefest of interactions with customers}
+
+\section{Languages}
+\cvitemwithcomment{}{Swedish (Native), English (Fluent)}{}
+
+\section{Computer skills}
+\cvitemwithcomment{}{Programming languages: Javascript, Java, Python, Haskell, Rust.}{}
+\cvitemwithcomment{}{Other computer skills: git, Linux, Github, Make, Docker, Travis CI, \LaTeX.}{}
+
+\section{Extracurricular activities}
+\cvlistitem{\textbf{Rekryt D/IT}\\ Rekryt D/IT is a society at Chalmers with the aim of reaching out to high school students and guide them in their choice of university programme. I worked with answering individual high school student's questions via online message correspondence throughout the school year 2020/2021. I also worked with arranging the booth for the programmes Data and Informationsteknologi at Chalmersdagen as well as multiple online-open house sessions for those interested in the programmes.}
+
+\cvlistitem{\textbf{DatE-IT}\\ DatE-IT is a labor fair for students of computer engineering, electrical engineering, software engineering, and medical engineering at Chalmers. I help with logistics during the construction of the show floor for the fair of 2021. I also were the main contact person for company attending the fair, which included answering questions and making sure they got the most out of their time there.}
+
+\cvlistitem{\textbf{Driver's License}\\ Yes.}
+
+\end{document}

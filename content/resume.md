@@ -8,8 +8,6 @@ creator = "Emacs 29.0.50 (Org mode 9.6 + ox-hugo)"
   identifier = "resume"
 +++
 
-Find attached, my resume:
+Find attached, [my resume](/cv.pdf).
 
-TODO: Insert resume.
-
-TODO: Insert link to source code.
+(And of course, the source{[.tex](/cv.tex), [.txt](/cv.txt)}. Simply compile with `pdflatex cv.tex`.)
