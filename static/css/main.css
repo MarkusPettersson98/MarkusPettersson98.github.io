@@ -1,3 +1,9 @@
+/* Add flexbox behaviour */
+.flex-container-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
     background-color: rgb(244, 244, 244);
 }
@@ -21,8 +27,8 @@ footer .list-inline {
 
 .list-inline > li {
     display: inline-block;
-    margin-right: 15px;
 }
+
 
 footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -46,7 +52,21 @@ footer .theme-by {
   }
 }
 
-.inline-svg {
+a {
+  color: #e24373;
+  /* Other nice colors -> */
+  /* color: #9141AC; */
+  /* color: rgb(70, 136, 71); */
+  /* color: #007a96; */
+}
+
+@media only screen and (min-width: 768px) {
+  header .header-links {
+    font-size: 16px;
+  }
+}
+
+.icon {
   display: inline-block;
   height: 2.15rem;
   width: 2.15rem;

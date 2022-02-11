@@ -1,10 +1,4 @@
 [[social_icons]]
-id = "email"
-url = "mailto:%s"
-title = "Email me"
-icon = "fas fa-envelope"
-
-[[social_icons]]
 id = "github"
 url = "https://github.com/%s"
 title = "GitHub"
@@ -45,3 +39,9 @@ id = "keybase"
 url = "https://keybase.io/%s"
 title = "Keybase"
 icon = "fab fa-keybase"
+
+[[social_icons]]
+id = "email"
+url = "mailto:%s"
+title = "Email me"
+icon = "fas fa-envelope"
