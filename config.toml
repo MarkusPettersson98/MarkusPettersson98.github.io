@@ -8,9 +8,9 @@ enableRobotsTXT = true
 
 [author]
     name = 'Markus Pettersson'
+    location = 'Sweden'
     email = 'markus.pettersson1998@gmail.com'
     github = 'markuspettersson98'
-    location = 'Sweden'
 
 [params]
     description = "Libre Software, Functional Programming & Engineering Optimism"
