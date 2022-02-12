@@ -32,7 +32,7 @@ What do I know.
 
 To strengthen my knowledge about **functional programming**, **type theory**, **compilers** and all of that jazz I enrolled in the [Computer Science master at Chalmers](https://www.chalmers.se/en/education/programmes/masters-info/pages/computer-science-algorithms-languages-and-logic.aspx) in 2020, which I'm about to graduate from this year (hopefully).
 It has been a great experience, with lots of interesting courses and lecturers/professors.
-I would claim that it has greatly improved my in-depth knowledge on key topcis.
+I would claim that it has greatly improved my in-depth knowledge on all of the aforementioned topics.
 I certainly know how a compiler works, and I would even go so far as to say that I know what a <abbr title=" A monad is just a monoid in the category of endofunctors, also known as a 'burrito' among domain experts.">monad</abbr> is. I hope to use my skills to build something cool one day, I'll just have to figure out what.
 
 The style of this site is heavily influenced by [Bear Blog ʕ•ᴥ•ʔ](https://bearblog.dev/) by [Herman Martinus](https://herman.bearblog.dev/).
