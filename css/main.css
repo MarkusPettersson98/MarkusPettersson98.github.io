@@ -4,11 +4,6 @@
   justify-content: space-between;
 }
 
-body {
-    background-color: rgb(244, 244, 244);
-    color: rgb(68, 68, 68);
-}
-
 footer {
   padding: 30px 0;
   /* border-top: 1px #EAEAEA solid; */
@@ -30,12 +25,12 @@ footer .list-inline {
     display: inline-block;
 }
 
-
 footer .copyright {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
   margin-bottom: 0;
 }
+
 footer .theme-by {
   text-align: center;
   margin: 10px 0 0;
