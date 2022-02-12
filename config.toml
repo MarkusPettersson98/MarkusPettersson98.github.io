@@ -16,7 +16,7 @@ enableRobotsTXT = true
     description = "Libre Software, Functional Programming & Engineering Optimism"
     tags = ["blog"]
     hideMadeWithLine = true
-    custom_css = ["css/bear.css", "css/main.css"]
+    custom_css = ["css/main.css"]
 
 [markup]
   [markup.goldmark]
