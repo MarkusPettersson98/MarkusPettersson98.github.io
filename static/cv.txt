@@ -3,7 +3,6 @@
 \moderncvcolor{black}
 
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
 \usepackage[export]{adjustbox}
 
 % adjust the page margins
@@ -13,7 +12,8 @@
 \title{Computer Science Student}                               
 \address{Luftvärnsvägen 2}{415 27 Göteborg}{Sweden}
 \phone[fixed]{+46~725~207~118}
-\email{markus.pettersson1998@gmail.com}  
+\email{markus.pettersson1998@gmail.com}
+\homepage{markuspettersson98.github.io}
 \social[github]{MarkusPettersson98}
 
 % Be gone, compilation errors
@@ -32,13 +32,12 @@ The thesis examined the possibility to retarget machine code compiled for a clas
 
 % Relevant Experience(s)
 \section{Experience}
-\cventry{2021}{Backend Web Developer}{Tele Radio}{}{Gothenburg}{Summer internship as a backend developer within the Business Software team at Tele Radio. During my stay, two new internal applications with a focus on automation and standardization of accounting and document management were developed using the Django web framework. These services were successfully deployed to Tele Radio's intranet. Some old services also received maintenance and patches.}
+\cventry{2021}{Backend Web Developer}{Tele Radio}{}{Gothenburg}{Summer internship as a backend developer within the Business Software team at Tele Radio. During my stay, two new internal applications with a focus on automation and standardization of accounting and document management were developed using the Django web framework. These services were successfully deployed to Tele Radio's intranet. I also contributed to some old services through various patches.}
 \cvitemwithcomment{}{\underline{Programming languages}: Python (Django), Javascript}{}
 \cvitemwithcomment{}{\underline{Other services used}: AWS (ECS, S3), Docker}{}
 
-
-\cventry{2020}{Report Management System for truck drivers}{Markus Pettersson}{}{Gothenburg}{A mobile application with focus on ease for truck drivers was designed, developed and delivered through my then newly founded company. In collaboration with the owner of a small-sized truck driving company, we identified the need for a better Report Management System for reporting common errors which drivers could face during their day-to-day work. The app has been in use company-wide since it was launched. I taught myself how to launch an application on the Android and iOS platforms, as well as how to develop and interface with native code through a React Native application.}
-\cvitemwithcomment{}{\underline{Programming languages}: Javascript (React Native), Kotlin, Swift.}{}
+\cventry{2020}{Report Management System for truck drivers}{Markus Pettersson}{}{Gothenburg}{A mobile application with focus on ease for truck drivers was designed, developed and delivered through my then newly founded company. In collaboration with the owner of a small-sized truck driving company, we identified the need for a better Report Management System for reporting common errors which drivers could face during their day-to-day work. The app has been in use company-wide since it was launched. I taught myself how to launch an application on the Android and iOS platforms, as well as how to develop and interface with platform native code from a React Native application.}
+\cvitemwithcomment{}{\underline{Programming languages}: Javascript (React Native, Redux), Kotlin, Swift.}{}
 \cvitemwithcomment{}{\underline{Other services used}: Firebase, Google Play, App Store.}{}
 
 % Other Experience(s)
@@ -46,17 +45,20 @@ The thesis examined the possibility to retarget machine code compiled for a clas
 
 \cventry{2017}{Supermarket employee}{Ica Nära Edane}{}{Arvika}{The work consisted of shelving products, taking care of incoming and outgoing shipments of food and parcels and keeping the supermarket clean \& tidy. Most of the work was customer-facing, which meant that one would have to stay remain calm and display a positive attitude for prolonged periods of time. It taught me to be punctual, disciplined and to enjoy even the briefest of interactions with customers}
 
-\section{Languages}
-\cvitemwithcomment{}{Swedish (Native), English (Fluent)}{}
+\section{Skills}
+%\section{Languages}
+\cvitemwithcomment{Languages}{Swedish (Native), English (Fluent)}{}
 
-\section{Computer skills}
-\cvitemwithcomment{}{Programming languages: Javascript, Java, Python, Haskell, Rust.}{}
-\cvitemwithcomment{}{Other computer skills: git, Linux, Github, Make, Docker, Travis CI, \LaTeX.}{}
+% \section{Computer skills}
+\cvitemwithcomment{Progamming Languages}{Java, Javascript, Python, Haskell, Rust}{}
+\cvitemwithcomment{Frameworks}{React, React Native, Django, Javalin}{}
+\cvitemwithcomment{Databases}{PostgreSQL, Firebase, Redis}{}
+\cvitemwithcomment{Other tools}{git, Linux, Make, Docker, Github, Github Actions, Travis CI, LLVM, \LaTeX.}{}
 
 \section{Extracurricular activities}
 \cvlistitem{\textbf{Rekryt D/IT}\\ Rekryt D/IT is a society at Chalmers with the aim of reaching out to high school students and guide them in their choice of university programme. I worked with answering individual high school student's questions via online message correspondence throughout the school year 2020/2021. I also worked with arranging the booth for the programmes Data and Informationsteknologi at Chalmersdagen as well as multiple online-open house sessions for those interested in the programmes.}
 
-\cvlistitem{\textbf{DatE-IT}\\ DatE-IT is a labor fair for students of computer engineering, electrical engineering, software engineering, and medical engineering at Chalmers. I help with logistics during the construction of the show floor for the fair of 2021. I also were the main contact person for company attending the fair, which included answering questions and making sure they got the most out of their time there.}
+\cvlistitem{\textbf{DatE-IT}\\ DatE-IT is a labor fair for students of computer engineering, electrical engineering, software engineering, and medical engineering at Chalmers. I assisted with logistics during the construction of the show floor for the fair of 2021. I was the main contact person for the people representing Spark Vision, which included answering questions and making sure they got the most out of their time at the fair.}
 
 \cvlistitem{\textbf{Driver's License}\\ Yes.}
 
