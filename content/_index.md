@@ -6,6 +6,6 @@ creator = "Emacs 29.0.50 (Org mode 9.6 + ox-hugo)"
 +++
 
 Welcome stranger!
-I'm Markus ☯.
+[I'm Markus](/about).
 
-This is where I share pieces of myself: [Blog posts](/blog), [my resume](/resume), open source projects and so on.
+This is where I share pieces of myself: [blog posts](/blog), [my resume](/resume), open source projects and so on.

@@ -14,9 +14,9 @@
 :END:
 
 Welcome stranger!
-I'm Markus ☯.
+[[/about][I'm Markus]].
 
-This is where I share pieces of myself: [[/blog][Blog posts]], [[/resume][my resume]], open source projects and so on.
+This is where I share pieces of myself: [[/blog][blog posts]], [[/resume][my resume]], open source projects and so on.
 
 * About
 :PROPERTIES:
