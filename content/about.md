@@ -35,4 +35,8 @@ It has been a great experience, with lots of interesting courses and lecturers/p
 I would claim that it has greatly improved my in-depth knowledge on all of the aforementioned topics.
 I've learnt how a compiler works, and I would even go so far as to say that I know what a <abbr title=" A monad is just a monoid in the category of endofunctors, also known as a 'burrito' among domain experts.">monad</abbr> is. I hope to use my skills to build something cool one day, I'll just have to figure out what.
 
-The style of this site is heavily influenced by [Bear Blog ʕ•ᴥ•ʔ](https://bearblog.dev/) by [Herman Martinus](https://herman.bearblog.dev/).
+
+## This site {#this-site}
+
+Built with [Hugo](https://gohugo.io/) and [ox-hugo](https://ox-hugo.scripter.co/), themed with [my fork](https://github.com/MarkusPettersson98/hugo-bearblog) of the [hugo-bearblog theme](https://github.com/janraasch/hugo-bearblog).
+The original [Bear Blog ʕ•ᴥ•ʔ](https://bearblog.dev/) is created by [Herman Martinus](https://herman.bearblog.dev/).
