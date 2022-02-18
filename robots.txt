@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://markuspettersson98.github.io/sitemap.xml
+Sitemap: https://datamaskin.se/sitemap.xml
