@@ -9,11 +9,11 @@
 \usepackage[scale=0.75]{geometry}
 
 \name{Markus}{Pettersson}
-\title{Computer Science Student}                               
+\title{Computer Science Student}
 \address{Luftvärnsvägen 2}{415 27 Göteborg}{Sweden}
 \phone[fixed]{+46~725~207~118}
 \email{markus.pettersson1998@gmail.com}
-\homepage{markuspettersson98.github.io}
+\homepage{datamaskin.se}
 \social[github]{MarkusPettersson98}
 
 % Be gone, compilation errors
@@ -46,10 +46,8 @@ The thesis examined the possibility to retarget machine code compiled for a clas
 \cventry{2017}{Supermarket employee}{Ica Nära Edane}{}{Arvika}{The work consisted of shelving products, taking care of incoming and outgoing shipments of food and parcels and keeping the supermarket clean \& tidy. Most of the work was customer-facing, which meant that one would have to stay remain calm and display a positive attitude for prolonged periods of time. It taught me to be punctual, disciplined and to enjoy even the briefest of interactions with customers}
 
 \section{Skills}
-%\section{Languages}
 \cvitemwithcomment{Languages}{Swedish (Native), English (Fluent)}{}
 
-% \section{Computer skills}
 \cvitemwithcomment{Progamming Languages}{Java, Javascript, Python, Haskell, Rust}{}
 \cvitemwithcomment{Frameworks}{React, React Native, Django, Javalin}{}
 \cvitemwithcomment{Databases}{PostgreSQL, Firebase, Redis}{}
