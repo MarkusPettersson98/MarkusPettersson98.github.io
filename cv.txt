@@ -9,12 +9,13 @@
 \usepackage[scale=0.75]{geometry}
 
 \name{Markus}{Pettersson}
-\title{Computer Science Student}
+\title{Computer Science Student}                               
 \address{Luftvärnsvägen 2}{415 27 Göteborg}{Sweden}
 \phone[fixed]{+46~725~207~118}
 \email{markus.pettersson1998@gmail.com}
 \homepage{datamaskin.se}
 \social[github]{MarkusPettersson98}
+\social[linkedin][www.linkedin.com/in/markus-pettersson-4785a1188/]{markus-pettersson-4785a1188}
 
 % Be gone, compilation errors
 \recipient{\mbox{}}{}
