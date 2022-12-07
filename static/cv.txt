@@ -23,11 +23,31 @@
 
 \makecvtitle
 
+% Relevant Experience(s)
+\section{Experience}
+\cventry{2022--present}{IT Consultant}{Agreat}{}{Gothenburg}{IT Consultant specialized in CI/CD automation and DevOps practices, with a sprinkle of Agile. I help teams enable their software developers to take complete ownership of their services.}
+
+\cventry{Oct 2022--\\present}{DevOps Engineer}{Agreat}{Volvo Car Corporation}{Gothenburg}{As one of two members on the platform team at Volvo Cars' Digital Key solution, I enable both embedded engineers and cloud engineers alike to focus on their deliveries by automating repetetive and error prone tasks. During a single day I can go from soldering new cable harnesses needed for debugging CAN-busses to implementing and deploying Jenkins CI/CD pipelines, depending on what's needed. Not entirely unlike a technologically versed janitor.}
+\cvitemwithcomment{}{\underline{Programming languages}: Python, bash, Embedded C/C++ (Arduino)}{}
+\cvitemwithcomment{}{\underline{Other}: Jenkins}{}
+
+\cventry{Sep 2022--\\Oct 2022}{DevOps \& Software Architect}{Agreat}{Hypocampus}{Gothenburg}{In close collaboration with \href{https://www.hypocampus.se/}{Hypocampus}, a digital learning platform for medical students, a tool for importing PDF-based exams to Hypocampus' interactive practice sessions was developed. I took responsibility for setting up and maintaining the CI infrastructure and code practices, which allowed the team of 5 new grads to focus on tackling the problem while keeping a rapid pace of development without fear of breaking things. First assignment during start up phase at Agreat.}
+\cvitemwithcomment{}{\underline{Programming languages}: Python}{}
+\cvitemwithcomment{}{\underline{Other}: Gitlab CI, Docker, mypy, pytest}{}
+
+\cventry{2021}{Backend Web Developer}{Tele Radio}{}{Gothenburg}{Summer internship as a backend developer within the Business Software team at Tele Radio. During my stay, two new internal applications with a focus on automation and standardization of accounting and document management were developed using the Django web framework. These services were successfully deployed to Tele Radio's intranet. I also contributed to some old services through various patches.}
+\cvitemwithcomment{}{\underline{Programming languages}: Python (Django), Javascript}{}
+\cvitemwithcomment{}{\underline{Other services used}: AWS (ECS, S3), Docker}{}
+
+\cventry{2020--present}{Report Management System for truck drivers}{Markus Pettersson}{}{Gothenburg}{A mobile application with focus on ease for truck drivers was designed, developed and delivered through my then newly founded company. In collaboration with the owner of a small-sized truck driving company, we identified the need for a better Report Management System for reporting common errors which drivers could face during their day-to-day work. The app has been in use company-wide since it was launched. I taught myself how to launch an application on the Android and iOS platforms, as well as how to develop and interface with platform native code from a React Native application.}
+\cvitemwithcomment{}{\underline{Programming languages}: Javascript (React Native, Redux), Kotlin, Swift.}{}
+\cvitemwithcomment{}{\underline{Other services used}: Firebase, Google Play, App Store.}{}
+
 \section{Education}
-\cventry{2022--present}{Master Thesis}{Chalmers University of Technology}{Gothenburg}{}{{}
+\cventry{2022--2022}{Master Thesis}{Chalmers University of Technology}{Gothenburg}{}{{}
   \href{https://github.com/dpella/masterthesisproposals/blob/main/2022/intervals_for_sensitivity.md}{Sensitivity computation for user-defined functions in Differential Privacy systems.}
-  Using Haskell's advanced type system and type level programming to enable efficient range analysis on database queries.
-  The goal is to advance an implementation of \href{https://en.wikipedia.org/wiki/Exponential_mechanism_(differential_privacy)}{the exponential mechanism} of an existing production database with mathematically proven anonymous guarantees.
+  We used Haskell's advanced type system and type level programming to implement a minimal framework for doing efficient range analysis on linear queries.
+  We benchmarked our solution by re-implementing \href{https://en.wikipedia.org/wiki/Exponential_mechanism_(differential_privacy)}{the exponential mechanism} in \href{https://www.dpella.io/}{DPella}'s database solution, which in turn offers \href{https://en.wikipedia.org/wiki/Differential_privacy}{differential privacy} guarantees.
 }
 \cventry{2020--present}{M.Sc. Computer Science - Algorithms, languages and logic}{Chalmers University of Technology}{Gothenburg}{}{{}Computer Science is a master degree program with the main focus on the foundations in the science of programming. I am focusing my education towards compilers and programming language design, which heavily emphasises logic, reasoning and functional programming. }
 \cventry{Spring 2020}{Bachelor Thesis}{Chalmers University of Technology}{Gothenburg}{}{{}
@@ -35,20 +55,8 @@ Dynamically Recompiling Emulator.
 The thesis examined the possibility to retarget machine code compiled for a classic 8-bit processor (MOS 6502) to modern systems by leveraging libraries for compilation and optimizations from the LLVM compiler framework. A JIT-compiler was successfully developed and presented in May 2020.}
 \cventry{2017--2020}{B.Sc Software Engineering}{Chalmers University of Technology}{Gothenburg}{}{{}}
 
-% Relevant Experience(s)
-\section{Experience}
-\cventry{2021}{Backend Web Developer}{Tele Radio}{}{Gothenburg}{Summer internship as a backend developer within the Business Software team at Tele Radio. During my stay, two new internal applications with a focus on automation and standardization of accounting and document management were developed using the Django web framework. These services were successfully deployed to Tele Radio's intranet. I also contributed to some old services through various patches.}
-\cvitemwithcomment{}{\underline{Programming languages}: Python (Django), Javascript}{}
-\cvitemwithcomment{}{\underline{Other services used}: AWS (ECS, S3), Docker}{}
-
-\cventry{2020}{Report Management System for truck drivers}{Markus Pettersson}{}{Gothenburg}{A mobile application with focus on ease for truck drivers was designed, developed and delivered through my then newly founded company. In collaboration with the owner of a small-sized truck driving company, we identified the need for a better Report Management System for reporting common errors which drivers could face during their day-to-day work. The app has been in use company-wide since it was launched. I taught myself how to launch an application on the Android and iOS platforms, as well as how to develop and interface with platform native code from a React Native application.}
-\cvitemwithcomment{}{\underline{Programming languages}: Javascript (React Native, Redux), Kotlin, Swift.}{}
-\cvitemwithcomment{}{\underline{Other services used}: Firebase, Google Play, App Store.}{}
-
-% Other Experience(s)
-\cventry{2018}{Canoe instructor}{Arvika Kanotcenter}{}{Arvika}{The work was very social and mostly outdoors. It included greeting \& taking care of arriving customers, teaching them to properly handle a canoe by themselves, make sure that they got back safely and generally taking care of equipment as well as people. It taught me multitasking, to remain calm when others were stressed or freaked out and how to communicate effectively in english (majority of customers and co-workers came from abroad).}
-
-\cventry{2017}{Supermarket employee}{Ica Nära Edane}{}{Arvika}{The work consisted of shelving products, taking care of incoming and outgoing shipments of food and parcels and keeping the supermarket clean \& tidy. Most of the work was customer-facing, which meant that one would have to stay remain calm and display a positive attitude for prolonged periods of time. It taught me to be punctual, disciplined and to enjoy even the briefest of interactions with customers}
+\section{Certificates}
+\cventry{2022}{Scrum Master Certification}{Scrum Alliance}{}{Gothenburg}{2 day course in Scrum, agile product development and group dynamics. Course was held by \href{https://www.crisp.se/kurser/kurstyper/certified-scrummaster}{Crisp}. Certificant ID \textbf{001412398} issued by \href{https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster}{Scrum Alliance}.}
 
 \section{Skills}
 \cvitemwithcomment{Languages}{Swedish (Native), English (Fluent)}{}
@@ -56,7 +64,7 @@ The thesis examined the possibility to retarget machine code compiled for a clas
 \cvitemwithcomment{Progamming Languages}{Java, Javascript, Python, Haskell, Rust}{}
 \cvitemwithcomment{Frameworks}{React, React Native, Django, Javalin}{}
 \cvitemwithcomment{Databases}{PostgreSQL, Firebase, Redis}{}
-\cvitemwithcomment{Other tools}{git, Linux, Bash, Make, Docker, Github, Github Actions, LLVM, \LaTeX.}{}
+\cvitemwithcomment{Other tools}{git, Linux, Bash, Make, Docker, Github, Github Actions, Gitlab CI, LLVM, \LaTeX.}{}
 
 \section{Extracurricular activities}
 \cvlistitem{\textbf{Rekryt D/IT}\\ Rekryt D/IT is a society at Chalmers with the aim of reaching out to high school students and guide them in their choice of university programme. I worked with answering individual high school student's questions via online message correspondence throughout the school year 2020/2021. I also worked with arranging the booth for the programmes Data and Informationsteknologi at Chalmersdagen as well as multiple online-open house sessions for those interested in the programmes.}
