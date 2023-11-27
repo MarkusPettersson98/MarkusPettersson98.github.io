@@ -1,15 +1,15 @@
-baseURL = 'https://datamaskin.se/'
+baseURL = 'https://marqs.io/'
 languageCode = 'en-us'
 languageLang = 'en'
 
-title = "Markus' place on the web ☯"
+title = "Markus Pettersson ☯"
 theme = 'bearblog'
 enableRobotsTXT = true
 
 [author]
     name = 'Markus Pettersson'
     location = 'Sweden'
-    email = 'markus.pettersson1998@gmail.com'
+    email = 'hi@marqs.io'
     github = 'markuspettersson98'
 
 [params]
