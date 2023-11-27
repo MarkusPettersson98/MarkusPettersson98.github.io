@@ -2,7 +2,7 @@
 title = "Home"
 author = ["Markus Pettersson"]
 draft = false
-creator = "Emacs 29.0.50 (Org mode 9.6 + ox-hugo)"
+creator = "Emacs 29.1 (Org mode 9.7 + ox-hugo)"
 +++
 
 Welcome stranger!

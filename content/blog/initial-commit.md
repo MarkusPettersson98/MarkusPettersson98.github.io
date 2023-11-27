@@ -3,7 +3,7 @@ title = "Initial Commit"
 author = ["Markus Pettersson"]
 date = 2022-02-10
 draft = false
-creator = "Emacs 29.0.50 (Org mode 9.6 + ox-hugo)"
+creator = "Emacs 29.1 (Org mode 9.7 + ox-hugo)"
 +++
 
 This marks the start of my very own personal blog. Finally.
