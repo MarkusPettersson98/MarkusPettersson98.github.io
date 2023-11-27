@@ -1,11 +1,17 @@
 [[social_icons]]
-id = "github"
-url = "https://github.com/%s"
-title = "GitHub"
-icon = "fab fa-github"
+id = "gpg"
+url = "/gpg/%s"
+title = "GPG key"
+icon = "fas fa-key"
 
 [[social_icons]]
 id = "email"
 url = "mailto:%s"
 title = "Email me"
 icon = "fas fa-envelope"
+
+[[social_icons]]
+id = "github"
+url = "https://github.com/%s"
+title = "GitHub"
+icon = "fab fa-github"

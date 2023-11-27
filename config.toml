@@ -11,6 +11,7 @@ enableRobotsTXT = true
     location = 'Sweden'
     email = 'hi@marqs.io'
     github = 'markuspettersson98'
+    gpg = 'marqs.asc'
 
 [params]
     description = "Libre Software, Functional Programming & Engineering Optimism"
