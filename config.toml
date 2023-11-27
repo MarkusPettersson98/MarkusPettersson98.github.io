@@ -6,7 +6,7 @@ title = "Markus Pettersson ☯"
 theme = 'bearblog'
 enableRobotsTXT = true
 
-[author]
+[params.author]
     name = 'Markus Pettersson'
     location = 'Sweden'
     email = 'hi@marqs.io'
