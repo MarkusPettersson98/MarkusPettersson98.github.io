@@ -163,3 +163,43 @@ Until next time.
 
 #+CAPTION: https://xkcd.com/741/
 [[file:images/blog/initial-commit/xkcd.png]]
+** I got a new domain 🎉
+:PROPERTIES:
+:EXPORT_FILE_NAME: new-domain
+:EXPORT_DATE: 2023-11-29
+:END:
+I've finally settled on a permanent domain: [[https://marqs.io][marqs.io]]
+
+It has multiple qualities which I like
+
+- It's somewhat short
+- It's obscure enough that I haven't seen this particular wordplay on "Markus" before, which makes it feel a tad bit more authentic
+- It's personal enough that I actually would want to use it as my personal email domain
+
+Since registering the domain on Nov 19 I've already comitted to it far more than my previous domain, for example associating it with my [[/gpg/marqs.asc][GPG key 🔑]].
+
+*** Domain Registrars
+I tought that I would try something new, and so I registered my new domain with
+[[https://www.gandi.net/][gandi]]. As a first-time customer, I've been pleasantly surprised! Their pricing
+is fair, their cPanel is straightforward, they don't seem to use trackers on
+their website, DNSSEC is really easy to enable and they support [[https://docs.gandi.net/en/account_management/security/security_key.html][security keys]]
+for MFA! 🎉
+
+I've previously used [[https://www.namecheap.com/][namecheap.com]] and the swedish domain registrar [[https://www.loopia.se/][loopia.se]].
+Namecheap was okay, they are generally very cheap and their cPanel is okay. I
+was quite disappointed with Loopia from the start, which is why I ever only
+registered 1 domain with them. They are quite expensive and they don't even
+support any form of 2FA/MFA. And no, I don't view having [[https://www.bankid.com/][BankID]] as a good reason
+to skip providing MFA for other types of login.
+
+In general I don't really like the state of affairs when it comes to domain
+registrars. They always try to upsell you on extra features (or even new
+domains!), and they all seem to track you for unknown reasons. It's a bit sad to
+see both [[https://github.com/gorhill/uBlock][uBlock Origin]] and [[https://privacybadger.org/][Privacy Badger]] being on high alert when I'm adding an
+A-record through their cPanel.
+
+*** Migration
+Currently, I'm hosting an out-dated version of this website at my old domain
+[[https://datamaskin.se][datamaskin.se]] in addition to this new website. When that domain expires (Feb
+12 2024), the old site will be forever unavailable and redacted from this blog
+post.
