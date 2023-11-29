@@ -68,8 +68,14 @@ is just a monoid in the category of endofunctors\, also known as a 'burrito'
 among domain experts.)}}} is. I hope to use my skills to build [[https://kristoff.it/blog/software-you-can-love/][software you can
 love]] one day, I'll just have to figure out what that could be.
 
+** Resume
+You can find a PDF version of my resume 👉 [[/cv.pdf][here]] 👈
+
+And of course, the sauce: cv.{[[/cv.tex][tex]], [[/cv.txt][txt]], [[https://github.com/MarkusPettersson98/cv][git]]}
+
 ** This site
-Built with [[https://gohugo.io/][Hugo]] and [[https://ox-hugo.scripter.co/][ox-hugo]], themed with [[https://github.com/MarkusPettersson98/hugo-bearblog][my fork]] of the [[https://github.com/janraasch/hugo-bearblog][hugo-bearblog theme]].
+Built with [[https://gohugo.io/][Hugo]], themed with [[https://github.com/MarkusPettersson98/hugo-bearblog][my fork]] of the [[https://github.com/janraasch/hugo-bearblog][hugo-bearblog theme]].
+
 The original [[https://bearblog.dev/][Bear Blog ʕ•ᴥ•ʔ]] is created by [[https://herman.bearblog.dev/][Herman Martinus]].
 
 * Cover letter
@@ -128,18 +134,6 @@ finally took the plunge. My hopes are that we can engage in a closer
 conversation soon.
 
 Until then, stay hidden out there 👋
-
-* Resume
-:PROPERTIES:
-:EXPORT_TITLE: Resume
-:EXPORT_HUGO_SECTION: /
-:EXPORT_FILE_NAME: resume
-:EXPORT_HUGO_MENU: :menu main
-:END:
-
-Find attached, [[file:~/Projects/me/site/static/cv.pdf][my resume]].
-
-And of course, the source{[[/cv.tex][.tex]], [[/cv.txt][.txt]], [[https://github.com/MarkusPettersson98/cv][.git]]}
 
 * Blog
 :PROPERTIES:

@@ -54,7 +54,15 @@ and I would even go so far as to say that I know what a <abbr title=" A monad is
 love](https://kristoff.it/blog/software-you-can-love/) one day, I'll just have to figure out what that could be.
 
 
+## Resume {#resume}
+
+You can find a PDF version of my resume 👉 [here](/cv.pdf) 👈
+
+And of course, the sauce: cv.{[tex](/cv.tex), [txt](/cv.txt), [git](https://github.com/MarkusPettersson98/cv)}
+
+
 ## This site {#this-site}
 
-Built with [Hugo](https://gohugo.io/) and [ox-hugo](https://ox-hugo.scripter.co/), themed with [my fork](https://github.com/MarkusPettersson98/hugo-bearblog) of the [hugo-bearblog theme](https://github.com/janraasch/hugo-bearblog).
+Built with [Hugo](https://gohugo.io/), themed with [my fork](https://github.com/MarkusPettersson98/hugo-bearblog) of the [hugo-bearblog theme](https://github.com/janraasch/hugo-bearblog).
+
 The original [Bear Blog ʕ•ᴥ•ʔ](https://bearblog.dev/) is created by [Herman Martinus](https://herman.bearblog.dev/).
