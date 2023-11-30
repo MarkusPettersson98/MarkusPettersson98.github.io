@@ -26,47 +26,46 @@ This is where I share pieces of myself: [[/blog][blog posts]], [[/resume][my res
 :EXPORT_HUGO_MENU: :menu main
 :END:
 ** Me
-*Markus Pettersson*, 24 y.o. *software engineer* living in *Gothenburg*,
-*Sweden*. Born and raised in Arvika, where my journey of building computers and
-tinkering with electronics began. Computers & video games allowed me to stay
-connected with my friends, and so I grew very fond of these machines. Learning
-to tinker with them was not only fascinating in itself, but you could save a
-few {{{abbr(sek, Swedish Crowns)}}} by building your own computer, which was
-important for a kid whose only significant income consisted of birthday gifts
-and christmas presents.
+*Markus Pettersson*, 25 y.o. *software engineer* living in *Gothenburg*, Sweden
+currently working for [[https://mullvad.net][Mullvad VPN]]. Raised in Arvika, where my journey of
+building computers and tinkering with electronics began. Computers & video games
+allowed me to stay connected with my friends, despite growing up in a rural
+area, and I quickly grew very fond of these machines. Learning to tinker with
+them was not only fascinating in itself, but building your own gaming computer
+was more cost effective than buying a pre-built dito. An important
+property for a kid who only recieved paychecks twice each year: birthday &
+christmas.
 
-It was not really until last year of upper secondary school that I wrote my
-first line of code. Which is weird, since I always wanted to get into game
-development. I guess it was because I did not know how to approach the subject,
-nor did anyone around me until then. That was until this great and super
-passionate teacher, Stefan Holm, showed me how to write Basic, C and a bit of
-C++. He introduced me to the clever humor of Douglas Adams, the sarcasm of [[https://xkcd.com/][xkcd]],
-and communities of programmers such as [[https://news.ycombinator.com/][Hacker News]]. A whole new world opened
-right in front of my eyes, and I've been hooked ever since.
+Despite being drawn to computers and video games all my childhood, I didn't
+write my first line of code until I was ~17. I always thought that I wanted to
+get into game development, but since I never knew how to approach the subject
+(nor did anyone around me back then either), the inertia was simply to big to
+overcome on my own. I would walk this earth, oblivious about programming, until
+I took an introductory programming course at my gymnasium held by an old-school
+LISP hacker. His passion made learning fun, and I got introduced to more
+programming languages and computing history than I've ever been in a single
+course ever since. While the curriculum was focused on writing Basic, C and a
+bit of C++, he indoctrinated us to the clever humor of Douglas Adams, the
+sarcasm of [[https://xkcd.com/][xkcd]], and programmer communities such as [[https://news.ycombinator.com/][Hacker News]]. A whole new
+world opened up right in front of our eyes, and I've been hooked ever since.
 
-I will be forevery grateful for free and open source software, from where I
-could keep learning about the things I like the most. I am certain the
-communities around open source projects changed my life for the better.
+Learning programming on my own has been infinitely easier ever since. I will be
+forever grateful for free and open source software, which allow me to keep
+learning about the tools I use everyday. I am certain the communities around
+open source projects changed my life for the better. But even more importantly,
+thank you Stefan.
 
-** Interests, motivation
-My interest lie in *programming languages* and *developer tools*.
-Who doesn't like when computers do arduous, and maybe even valuable work for them?
-If computers can not automate a certain process, they should at least gently guide the user through the process.
-That's why I appreciate projects like [[https://www.rust-lang.org/][Rust]], that build on a collective of knowledge from a truly *open community* to reshape the old and crude ways of working, in this case for systems programming.
-Now that I think about it, I haven't heard the phrase "[[https://www.youtube.com/watch?v=LazvK39Oc4U][Bending the Curve]]" in a while.
-Maybe Rust's ideas about safety has become more and more normalized since its 1.0 release.
-What do I know.
+** Interests
+I love  *programming languages* and *developer tools*.
+I like teaching computers to do arduous work for me, and there are just so many interesting topics to learn while doing so.
 
-To strengthen my knowledge about *functional programming*, *type theory*,
-*compilers* and all of that jazz I enrolled in the [[https://www.chalmers.se/en/education/programmes/masters-info/pages/computer-science-algorithms-languages-and-logic.aspx][Computer Science master at
-Chalmers]] in 2020, which I'm about to graduate from this year (hopefully). It
-has been a great experience, with lots of interesting courses and
-lecturers/professors. I would claim that it has greatly improved my in-depth
-knowledge on all of the aforementioned topics. I've learnt how a compiler works,
-and I would even go so far as to say that I know what a {{{abbr(monad, A monad
-is just a monoid in the category of endofunctors\, also known as a 'burrito'
-among domain experts.)}}} is. I hope to use my skills to build [[https://kristoff.it/blog/software-you-can-love/][software you can
-love]] one day, I'll just have to figure out what that could be.
+To strengthen my knowledge about *functional programming*, *type theory* &
+*compilers*, I pursued a master's degree in [[https://www.chalmers.se/en/education/programmes/masters-info/pages/computer-science-algorithms-languages-and-logic.aspx][Computer Science at Chalmers]]. It was
+a great and humbling experience, and it introduced me to lots of interesting
+subjects and people. I've learnt how a compiler works, and I would even go so
+far as to say that I know {{{abbr(what a monad is, A monad is just a monoid in
+the category of endofunctors\, also known as a 'burrito' among domain
+experts.)}}}. I hope to use my skills to build [[https://kristoff.it/blog/software-you-can-love/][software you can love]].
 
 ** Resume
 You can find a PDF version of my resume 👉 [[/cv.pdf][here]] 👈
@@ -77,63 +76,6 @@ And of course, the sauce: cv.{[[/cv.tex][tex]], [[/cv.txt][txt]], [[https://gith
 Built with [[https://gohugo.io/][Hugo]], themed with [[https://github.com/MarkusPettersson98/hugo-bearblog][my fork]] of the [[https://github.com/janraasch/hugo-bearblog][hugo-bearblog theme]].
 
 The original [[https://bearblog.dev/][Bear Blog ʕ•ᴥ•ʔ]] is created by [[https://herman.bearblog.dev/][Herman Martinus]].
-
-* Cover letter
-:PROPERTIES:
-:EXPORT_TITLE: Mullvad Application
-:EXPORT_HUGO_SECTION: /
-:EXPORT_FILE_NAME: mullvad
-:END:
-Hello there, moles! 👋
-
-This is the cover letter for my formal application to Mullvad.
-
-My name is Markus Pettersson. If you haven't already, check the [[/about][About section]] to
-find out more about who I am. In short, I'm a 24 years old software engineer who
-loves open source, well-written documentation, functional programming &
-specialty coffee ☕
-
-But now, let's get to the interesting bits: *Why am I applying to work at
-Mullvad?* Because I think that you are genuinely a good workplace for someone
-like me. I want to do something meaningful as an engineer, but sadly, I think
-lots of time & resources are spent developing things that are not meaningful. In
-my opinion, technology should be used for the common good, not the wealthy few.
-Software should serve the users, not corporate stakeholders. And maybe most
-importantly, software should work well, which requires attention,
-conscientiousness and respect for the craft that is programming.
-
-My image of Mullvad grew during my studies at Chalmers, where I got to talk to
-some smart people who also happened to take privacy seriously. They used
-Mullvad, because your VPN is transparent and works well with truly minimal
-intrusion. Auto-generated account numbers, pay by mailing cash and the banner on
-your site that tells whether the user is browsing from a secure connection. All
-these things feel so obvious, but they show how far ahead you are compared to
-competing VPN services in actually caring about the end user's best interest.
-
-I also remember reading the blog post [[https://mullvad.net/sv/blog/2019/8/7/open-source-firmware-future/][Open source firmware is the future]], which
-coincided with me exploring if I could get my hands on one of the early RISC-V
-SBCs to deploy in my homelab. I remember feeling the desire to work at a place
-where such thoughts are taking seriously: as fundamental as computers are in
-today's society, they have no right to be the black boxes that they currently
-are.
-
-*What I can bring to the table* is a genuine interest in making the world a
-little better, one line of code at a time. As far as I can tell, my personal
-beliefs align well with Mullvad's core values, which I've come to learn is
-crucial for my motivation & happiness. Therefore, I am confident that a career
-at Mullvad could become a sustainable, long-term investment for both parties.
-
-I enjoy learning new technologies, especially programming languages. I try to
-attend as many local developer meetups as I can manage, among them the [[https://www.meetup.com/rustgbg/?_cookie-check=Tn0Gtbp-Fc9o1EMt][Rust Gbg]]
-meetups where I've bumped into your guy: Linus Färnstrand. As a self-proclaimed
-polyglot with [[/cv.pdf][professional experience from all-over the tech stack-spectrum]], I
-have an easy time to pick up new skills & tools as needed.
-
-Personally, I think this application is way overdue, and I'm happy that I
-finally took the plunge. My hopes are that we can engage in a closer
-conversation soon.
-
-Until then, stay hidden out there 👋
 
 * Blog
 :PROPERTIES:
@@ -197,3 +139,60 @@ Currently, I'm hosting an out-dated version of this website at my old domain
 [[https://datamaskin.se][datamaskin.se]] in addition to this new website. When that domain expires (Feb
 12 2024), the old site will be forever unavailable and redacted from this blog
 post.
+* Cover letter
+:PROPERTIES:
+:EXPORT_TITLE: Mullvad Application
+:EXPORT_HUGO_SECTION: /
+:EXPORT_FILE_NAME: mullvad
+:END:
+Hello there, moles! 👋
+
+This is the cover letter for my formal application to Mullvad.
+
+My name is Markus Pettersson. If you haven't already, check the [[/about][About section]] to
+find out more about who I am. In short, I'm a 24 years old software engineer who
+loves open source, well-written documentation, functional programming &
+specialty coffee ☕
+
+But now, let's get to the interesting bits: *Why am I applying to work at
+Mullvad?* Because I think that you are genuinely a good workplace for someone
+like me. I want to do something meaningful as an engineer, but sadly, I think
+lots of time & resources are spent developing things that are not meaningful. In
+my opinion, technology should be used for the common good, not the wealthy few.
+Software should serve the users, not corporate stakeholders. And maybe most
+importantly, software should work well, which requires attention,
+conscientiousness and respect for the craft that is programming.
+
+My image of Mullvad grew during my studies at Chalmers, where I got to talk to
+some smart people who also happened to take privacy seriously. They used
+Mullvad, because your VPN is transparent and works well with truly minimal
+intrusion. Auto-generated account numbers, pay by mailing cash and the banner on
+your site that tells whether the user is browsing from a secure connection. All
+these things feel so obvious, but they show how far ahead you are compared to
+competing VPN services in actually caring about the end user's best interest.
+
+I also remember reading the blog post [[https://mullvad.net/sv/blog/2019/8/7/open-source-firmware-future/][Open source firmware is the future]], which
+coincided with me exploring if I could get my hands on one of the early RISC-V
+SBCs to deploy in my homelab. I remember feeling the desire to work at a place
+where such thoughts are taking seriously: as fundamental as computers are in
+today's society, they have no right to be the black boxes that they currently
+are.
+
+*What I can bring to the table* is a genuine interest in making the world a
+little better, one line of code at a time. As far as I can tell, my personal
+beliefs align well with Mullvad's core values, which I've come to learn is
+crucial for my motivation & happiness. Therefore, I am confident that a career
+at Mullvad could become a sustainable, long-term investment for both parties.
+
+I enjoy learning new technologies, especially programming languages. I try to
+attend as many local developer meetups as I can manage, among them the [[https://www.meetup.com/rustgbg/?_cookie-check=Tn0Gtbp-Fc9o1EMt][Rust Gbg]]
+meetups where I've bumped into your guy: Linus Färnstrand. As a self-proclaimed
+polyglot with [[/cv.pdf][professional experience from all-over the tech stack-spectrum]], I
+have an easy time to pick up new skills & tools as needed.
+
+Personally, I think this application is way overdue, and I'm happy that I
+finally took the plunge. My hopes are that we can engage in a closer
+conversation soon.
+
+Until then, stay hidden out there 👋
+
