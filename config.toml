@@ -26,23 +26,23 @@ table_of_contents = "Table of contents"
 language = "language"
 site = "site"
 
-[languages.de]
-title = "Zola ʕ•ᴥ•ʔ Bear Blog"
-description = "Ein Zola-theme basiert auf Bear Blog."
+[languages.se]
+title = "#"
+description = "En plats i cyberrymden."
 
 taxonomies = [
   { name = "categories", feed = true },
   { name = "tags", feed = true },
 ]
 
-[languages.de.translations]
-no_posts = "Keine Einträge"
-remove_filter = "Filter entfernen"
-filtering_for = "Filtern nach"
-made_with = "Erstellt mit"
-table_of_contents = "Inhaltsverzeichnis"
-language = "Sprache"
-site = "Site"
+[languages.se.translations]
+no_posts = "Ingen bloggpost"
+remove_filter = "Ta bort filter"
+filtering_for = "Filtrerar på"
+made_with = "Skapat med"
+table_of_contents = "Innehållsförteckning"
+language = "Språk"
+site = "sajt"
 
 [markdown]
 # Whether to do syntax highlighting
@@ -55,7 +55,7 @@ webserver_sends_csp_headers = true
 language_switcher = true
 translations = [
   { code = "en", name = "English" },
-  { code = "de", name = "Deutsch" },
+  { code = "se", name = "Svenska" },
 ]
 
 [extra.table_of_contents]
@@ -65,20 +65,20 @@ visible_on_load = true
 
 [[extra.main_menu]]
 name = "Home"
-name_de = "Startseite"
+name_se = "Startsida"
 url = "@/_index.md"
 
 [[extra.main_menu]]
 name = "Bear"
-name_de = "Bear"
+name_se = "Bear"
 url = "@/bear.md"
 
 [[extra.main_menu]]
 name = "Zola"
-name_de = "Zola"
+name_se = "Zola"
 url = "@/zola.md"
 
 [[extra.main_menu]]
 name = "Blog"
-name_de = "Blog"
+name_se = "Blog"
 url = "@/blog/_index.md"
