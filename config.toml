@@ -1,6 +1,6 @@
-title = "Zola ʕ•ᴥ•ʔ Bear Blog"
+title = "#"
 base_url = "/"
-description = "A Zola-theme based on Bear Blog."
+description = "a space in cyberspace."
 
 generate_feeds = true
 
