@@ -57,6 +57,7 @@ translations = [
   { code = "en", name = "English" },
   { code = "se", name = "Svenska" },
 ]
+favicon = "/favicon.ico"
 
 [extra.table_of_contents]
 show = true
