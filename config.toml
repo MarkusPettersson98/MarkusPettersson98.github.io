@@ -70,11 +70,6 @@ name_se = "Startsida"
 url = "@/_index.md"
 
 [[extra.main_menu]]
-name = "Bear"
-name_se = "Bear"
-url = "@/bear.md"
-
-[[extra.main_menu]]
 name = "Blog"
 name_se = "Blog"
 url = "@/blog/_index.md"
