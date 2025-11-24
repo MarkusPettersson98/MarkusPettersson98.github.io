@@ -75,11 +75,6 @@ name_se = "Bear"
 url = "@/bear.md"
 
 [[extra.main_menu]]
-name = "Zola"
-name_se = "Zola"
-url = "@/zola.md"
-
-[[extra.main_menu]]
 name = "Blog"
 name_se = "Blog"
 url = "@/blog/_index.md"
