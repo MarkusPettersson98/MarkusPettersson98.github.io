@@ -1,16 +1,14 @@
 +++
 +++
-# be me
+# $whois
 
-> Developer @ Mullvad VPN
+Fuck authority. Do crime: Be gay, circumvent state & corporate censorship. Nobody's free until everybody's free.
 
-> Rust by day. Eyeing Zig by night. Low key jealous of Gleam devs.
+Socialist, activist, privacy- and free software advocate. Focusing on things that makes me happy.
 
-> Focusing on things that makes me happy. Socialist, activist, privacy- and free software advocate. Nobody's free until everybody's free. Don't bother if you disagree.
+Developer @ Mullvad. Rust by day. Eyeing Zig by night. Low key jealous of Gleam devs.
 
-> Trying to get into the habit of writing. While I'm building up my hall of blog posts, grab a coffee and hit me up in dms: `hi@0x23.se`
-
-Here's my GPG pubkey for those who are into that stuff
+Contact me at `hi 'at' 0x23.se`
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
