@@ -2,7 +2,7 @@
 +++
 # $whois
 
-Fuck authority. Do crime: Be gay, circumvent state & corporate censorship. Nobody's free until everybody's free.
+Fuck authority. Do crime: Be gay, hide a refugee, circumvent state & corporate censorship. Nobody's free until everybody's free.
 
 Socialist, activist, privacy- and free software advocate. Focusing on things that makes me happy.
 
