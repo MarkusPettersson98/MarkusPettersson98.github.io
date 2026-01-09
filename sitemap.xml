@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>/</loc>
+    </url>
+    <url>
+        <loc>/blog/</loc>
+    </url>
+    <url>
+        <loc>/blog/opinions-on-ai/</loc>
+        <lastmod>2026-01-08</lastmod>
+    </url>
+    <url>
+        <loc>/blog/venezuela-imperal-boomerang/</loc>
+        <lastmod>2026-01-06</lastmod>
+    </url>
+    <url>
+        <loc>/categories/</loc>
+    </url>
+    <url>
+        <loc>/se/</loc>
+    </url>
+    <url>
+        <loc>/se/blog/</loc>
+    </url>
+    <url>
+        <loc>/se/categories/</loc>
+    </url>
+    <url>
+        <loc>/se/tags/</loc>
+    </url>
+    <url>
+        <loc>/tags/</loc>
+    </url>
+</urlset>

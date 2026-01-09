@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>#</title>
+    <subtitle>a space in cyberspace.</subtitle>
+    <link rel="self" type="application/atom+xml" href="/atom.xml"/>
+    <link rel="alternate" type="text/html" href="/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-01-08T00:00:00+00:00</updated>
+    <id>/atom.xml</id>
+    <entry xml:lang="en">
+        <title>there is no neutral tech</title>
+        <published>2026-01-08T00:00:00+00:00</published>
+        <updated>2026-01-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/opinions-on-ai/"/>
+        <id>/blog/opinions-on-ai/</id>
+        
+        <content type="html" xml:base="/blog/opinions-on-ai/">&lt;p&gt;There are plenty of reasons why I hate &quot;A.I.&quot;.
+The primary reason being that it&#x27;s painfully obvious to me who stand to profit from it.
+It&#x27;s not us, but we are conditioned to believe so.&lt;&#x2F;p&gt;
+&lt;p&gt;As with most takes, there are nuances. &quot;A.I.&quot; has been put to good, for example to advance medical research.
+But it has been put to awful use by many bad actors, as I will be discussing in a later blog post.
+And I firmly believe that &lt;a href=&quot;https:&#x2F;&#x2F;breadandrobots.substack.com&#x2F;p&#x2F;the-myth-of-neutral-technology&quot;&gt;there is no such things as &quot;neutral technology&quot;&lt;&#x2F;a&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt; - design is always deliberate, and thus embed social norms.
+In a capitalist society, that would be norms such as &quot;efficiency&quot; (time management), or &quot;profitability&quot; (the potential for monetary extraction).
+Cloud-hosted, generative &quot;A.I&quot;, i.e. what most people refer to as &quot;A.I.&quot; nowadays, are already displacing a sizeable chunk of workers in the name of &quot;increased productivity&quot; and &quot;cost-savings&quot;.
+And yet, most of us are conditioned to deploy these tools in our everyday work.
+They nestle their way into government bodies and private companies alike, solidifying themselves as core infrastructure of society even if they turn out to be &lt;a href=&quot;https:&#x2F;&#x2F;www.tomshardware.com&#x2F;tech-industry&#x2F;artificial-intelligence&#x2F;95-percent-of-generative-ai-implementations-in-enterprise-have-no-measurable-impact-on-p-and-l-says-mit-flawed-integration-key-reason-why-ai-projects-underperform&quot;&gt;useless in a large number of cases&lt;&#x2F;a&gt;.
+But limiting the discourse to case studies is naive at best and predatory at worst.
+It&#x27;s a lost cause riddled with counter-examples from both sides, and it inevitably leads to reactionary thinking as opposed to dialectical analysis.
+The point is to make you relient on the technology, not because you need it but because it is soon part of the norm for what makes a productive citizen.
+As soon as you let it shape the way you think, it becomes an extension of yourself.
+Let a machine do the thinking but operate it, shifting the worker&#x27;s power into the hands of the owners one prompt at a time.
+It does not have a purpose but you will give it one, fulfilling the prophecy of the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Techno-Optimist_Manifesto&quot;&gt;Techno-Optimist manifesto&lt;&#x2F;a&gt;.
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;The_medium_is_the_message&quot;&gt;The medium is the message&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;And the free market we find ourselves in is bizare.
+These companies keep burning money while wasting a fuckton of energy &amp;amp; water.
+And somehow, the LLM owners still struggle achieve their entire raison d&#x27;être: to turn a profit for their shareholders.
+But due to investor&#x27;s hype, NVidia&#x27;s evaluation would currently make it the 3rd largest economy in the world (looking at nominal GDP).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;nvidia-vs-the-world.png&quot; alt=&quot;&quot; &#x2F;&gt;
+&lt;cite&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;www.binance.com&#x2F;en-AE&#x2F;square&#x2F;post&#x2F;31847511347481&quot;&gt;https:&#x2F;&#x2F;www.binance.com&#x2F;en-AE&#x2F;square&#x2F;post&#x2F;31847511347481&lt;&#x2F;a&gt;
+&lt;&#x2F;cite&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There is no way that NVidia alone is more productive than the entire German economy.
+NVidia &lt;strong&gt;can not&lt;&#x2F;strong&gt; sustain the entire German population (84 000 000 people), but &quot;we&quot; pretend it can.
+But capitalism does not care, because Q4 results were great and Q1 is just getting started.&lt;&#x2F;p&gt;
+&lt;p&gt;And the rest of us who do care are in for the ride anyway. For reference one of Sweden&#x27;s largest pension funds, &lt;a href=&quot;https:&#x2F;&#x2F;www.ap7.se&#x2F;english&#x2F;&quot;&gt;AP7&lt;&#x2F;a&gt;, has a &lt;a href=&quot;https:&#x2F;&#x2F;www.privataaffarer.se&#x2F;privatekonomi&#x2F;pension&#x2F;pensionsjatten-utvecklingen-i-usa-ar-otack&#x2F;&quot;&gt;70% exposure towards the US stock market&lt;&#x2F;a&gt;.
+And that&#x27;s just the stock market.
+In the event of an actual crash, many countries will head straight towards a recession due to the global reach of the US economy.
+When the &quot;A.I.&quot; bubble finally bursts, it will be the second global economic crisis that I&#x27;ve witnessed in my lifetime so far. And I&#x27;m not even 30 years old.
+Yet &quot;we&quot; tell ourselves that this is the most effective economic system for managing resources.&lt;&#x2F;p&gt;
+&lt;p&gt;As two wise men once said:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The bourgeoisie cannot exist without constantly revolutionising the instruments of production, and thereby the relations of production, and with them the whole relations of society.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;I highly recommend &lt;a href=&quot;https:&#x2F;&#x2F;www.ppfideas.com&#x2F;episodes&#x2F;the-history-of-bad-ideas%3A-value-free-tech&quot;&gt;The History of Bad Ideas: Value-Free Tech&lt;&#x2F;a&gt; episode from the &lt;a href=&quot;https:&#x2F;&#x2F;www.ppfideas.com&#x2F;&quot;&gt;Past Present Future podcast&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>On Venezuela; The Imperal Boomerang</title>
+        <published>2026-01-06T00:00:00+00:00</published>
+        <updated>2026-01-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="/blog/venezuela-imperal-boomerang/"/>
+        <id>/blog/venezuela-imperal-boomerang/</id>
+        
+        <content type="html" xml:base="/blog/venezuela-imperal-boomerang/">&lt;p&gt;On the 3rd of January the U.S. invaded Venezuela and illegally abducted Nicolás Maduro, while being very blatant about the &lt;a href=&quot;https:&#x2F;&#x2F;www.bbc.com&#x2F;news&#x2F;articles&#x2F;crkr4y717k7o&quot;&gt;profit motive&lt;&#x2F;a&gt; driving this intervention.&lt;&#x2F;p&gt;
+&lt;p&gt;Shortly thereafter, peaceful protestors were arrested for speaking up against said intervention.&lt;&#x2F;p&gt;
+&lt;div style=&quot;display: flex; align-items: center; justify-content: center;&quot;&gt;
+    &lt;video controls style=&quot;max-width: 100%; max-height: 100%;&quot;&gt;
+        &lt;source src=&quot;&#x2F;activist-arrested-after-protesting-us-invasion-of-venezuela.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+    &lt;&#x2F;video&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The arresting of protestors is totally expected; U.S. always was an imperialist, fascist state since it was founded by colonial settlers.
+And if the suppression of dissidents in the West came as a surprise to anyone, now is a good time to get acquainted with the Imperial Boomerang:&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And then one fine day the bourgeoisie is awakened by a terrific boomerang effect: the gestapos are busy, the prisons fill up, the torturers standing around the racks invent, refine, discuss. People are surprised, they become indignant. They say: &quot;How strange! But never mind—it&#x27;s Nazism, it will pass!&quot; And they wait, and they hope; and they hide the truth from themselves, that it is barbarism, the supreme barbarism, the crowning barbarism that sums up all the daily barbarisms; that it is Nazism, yes, but that before they were its victims, they were its accomplices; that they tolerated that Nazism before it was inflicted on them, that they absolved it, shut their eyes to it, legitimized it, because, until then, it had been applied only to non-European peoples; that they have cultivated that Nazism, that they are responsible for it, and that before engulfing the whole edifice of Western, Christian civilization in its reddened waters, it oozes, seeps, and trickles from every crack.&lt;br&gt;
+— &lt;cite&gt;Aimé Césaire, Discourse on Colonialism (1950)&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;cite&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Staying silent is being complicit. Staying silent is accepting a fascist hegemony.
+Gaza was a clear signal to the leaders of the world that the international community will not intervene even in the face of a genocide, so why would they oppose forceful capture of natural resources in South America?
+U.S. has to get out of Venezuela. &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Monroe_Doctrine&quot;&gt;Out of all of South America&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;www.government.se&#x2F;government-policy&#x2F;military-defence&#x2F;defence-cooperation-agreement-with-the-united-states&#x2F;&quot;&gt;Out of Sweden&lt;&#x2F;a&gt;. Fuck off.&lt;&#x2F;p&gt;
+&lt;p&gt;Resisting will not get easier, but they can not arrest us all. Their economy will literally fall apart without us.
+Show unconditional solidarity with all oppressed of the world.
+Don&#x27;t mourn, organize!&lt;&#x2F;p&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;The above quote is excerpted from the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Imperial_boomerang&quot;&gt;Wikipedia article&lt;&#x2F;a&gt; on the Imperial Boomerang thesis, January 6 2026.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>

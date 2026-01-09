@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="se">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="shortcut icon" href="&#x2F;favicon.ico"><title>#</title>
+  <meta name="title" content="#">
+<meta name="description" content="En plats i cyberrymden.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+  <style>
+    :root {
+    --width: 800px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --code-background-color: #f2f2f2;
+    --code-color: #222;
+    --blockquote-color: #222;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #01242e;
+      --heading-color: #eee;
+      --text-color: #ddd;
+      --link-color: #8cc2dd;
+      --visited-color: #8b6fcb;
+      --code-background-color: #000;
+      --code-color: #ddd;
+      --blockquote-color: #ccc;
+    }
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  nav span.active {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  pre code {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 0.875rem;
+    overflow-x: auto;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--code-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    padding: 1px 15px;
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  /* blog post list */
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+  .tags {
+    font-size: smaller;
+  }
+
+  .footnote-definition {
+    display: flex;
+    margin-top: 1em;
+  }
+  .footnote-definition-label {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    vertical-align: baseline;
+  }
+  .footnote-definition-label::after {
+    content: "."
+  }
+  .footnote-definition > p {
+    margin: 0;
+  }
+
+  </style>
+</head>
+<body>
+  <header>
+  <nav class="lang" aria-label="Språk">
+        <a href="/" hreflang="en" lang="en">English</a>
+        <span class="active">Svenska</span>
+  </nav>
+  <a href="/se/" class="title">
+    <h1>#</h1>
+  </a>
+  <nav aria-label="sajt">
+      <a href="/se/">Startsida</a>
+      <a href="/se/blog/">Blog</a>
+  </nav>
+</header>
+
+  <main>
+    <h1 id="var-jag">var jag</h1>
+<p>TODO: Översätt til svenska. Kanske.</p>
+<pre><code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEZVy89xYJKwYBBAHaRw8BAQdAbL7moVTNCvt8onOLuEdvloe3Kl3+vvHEUF2h
+kBJokgu0IE1hcmt1cyBQZXR0ZXJzc29uIDxkZXZAbWFycXMuaW8+iJEEExYKADkC
+GwEECwkIBwQVCgkIBRYCAwEAAh4BAheAFiEEET2MhtkDgF47bob8&#x2F;2zXxvfkofsF
+AmVjkX0CGQEACgkQ&#x2F;2zXxvfkoftyRQD&#x2F;bGwF08qS4YjlPhUbgbV99&#x2F;lFxK9jsqki
+LC6YYuiJ71oBAID0kDLVm9zMh1W0XNYt75RW8I4GntswvoV8cySFlEgAtB9NYXJr
+dXMgUGV0dGVyc3NvbiA8aGlAbWFycXMuaW8+iI4EExYKADYWIQQRPYyG2QOAXjtu
+hvz&#x2F;bNfG9+Sh+wUCZWORZgIbAQQLCQgHBBUKCQgFFgIDAQACHgECF4AACgkQ&#x2F;2zX
+xvfkofvGkwEA7r1ICYOclhLODJ6pD7trFku1U2yUV0EqezOVdE6wf+wA&#x2F;3nXUTPW
+IwICm&#x2F;NPh0C7jI36rOCFTh+c+pzoAAFyuE8LuDMEZWOWVhYJKwYBBAHaRw8BAQdA
+WvHxQsnPVny7fVYoidMe9W8WClP1txheEPQpRGz0Gi2I7wQYFgoAIBYhBBE9jIbZ
+A4BeO26G&#x2F;P9s18b35KH7BQJlY5ZWAhsCAIEJEP9s18b35KH7diAEGRYKAB0WIQQ0
+Y14jiyCgpxUHalvdHur5MfliTwUCZWOWVgAKCRDdHur5MfliT&#x2F;InAQC58X6wWjhA
+5JivDCh7eYfd9JHUFLySaToF6ONNaa4jZgEA3f2NDmVhoCrhtNolSHnf7ZclasnU
+92nLSbe0IVCrpQg4nwEAm5hqOBm&#x2F;BjM2RJEnYsVzGWsrRVt6viC0Xn1X0dq25JoB
+ALMwGsd9BPAMYQ2dpEME8OFUoKX0thMyqh5fYpvddwYKuDgEZWOWhxIKKwYBBAGX
+VQEFAQEHQFGKDQIoPjwImbLBFcG11vo7xC0HSd5xhGnbnK3BAcEkAwEIB4h4BBgW
+CgAgFiEEET2MhtkDgF47bob8&#x2F;2zXxvfkofsFAmVjlocCGwwACgkQ&#x2F;2zXxvfkofuA
+9wD+M6brT7hCYLo39lSfCFcX6A4rN3l86iUBHOjdfudHULsBALhkRqO3wyh+kL2+
+ticyyegvgiief1pP1pXQk14bGM4PuDMEZWOWoBYJKwYBBAHaRw8BAQdAIo1qCm96
+3diIgdO6rJUL6qykPWfMequaspZ037uKQVGIeAQYFgoAIBYhBBE9jIbZA4BeO26G
+&#x2F;P9s18b35KH7BQJlY5agAhsgAAoJEP9s18b35KH7XtYBAPXrX8wAEWKdpf6PN7If
+cLaBd+VUVieVDq&#x2F;WO7Ik51P9AQCLgB4+MPYxl9PxfCqsaOYTaFGj7mNqHdEO2ivQ
+TuT2BQ==
+=aSII
+-----END PGP PUBLIC KEY BLOCK-----
+</code></pre>
+
+  </main>
+<footer>
+    Skapat med <a href="https://codeberg.org/alanpearce/zola-bearblog">Zola ʕ•ᴥ•ʔ Bear</a>
+</footer>
+</body>
+</html>
