@@ -44,11 +44,6 @@ table_of_contents = "Innehållsförteckning"
 language = "Språk"
 site = "sajt"
 
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
-
 [extra]
 date_format = "%Y-%m-%d"
 webserver_sends_csp_headers = true
