@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="css/slides-extended.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+    <link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+    <script type="text/javascript">
+        function pageInIframe() {
+            return (window.location !== window.parent.location);
+        }
+
+        let forgetPop = true;
+        function onPopState(event) {
+            if(forgetPop){
+                forgetPop = false;
+            } else if( pageInIframe()) {
+                parent.postMessage(event.target.location.href, "app://obsidian.md");
+            }
+        }
+        window.onpopstate = onPopState;
+        window.onmessage = event => {
+            if(event.data == "reload"){
+                window.document.location.reload();
+            }
+            forgetPop = true;
+        }
+
+        function fitElements() {
+            const itemsToFit = document.getElementsByClassName('fitText');
+            for (const item in itemsToFit) {
+                if (Object.hasOwnProperty.call(itemsToFit, item)) {
+                    const element = itemsToFit[item];
+                    fitElement(element, 1, 1000);
+                    element.classList.remove('fitText');
+                }
+            }
+        }
+
+        function fitElement(element, start, end) {
+
+            let size = (end + start) / 2;
+            element.style.fontSize = `${size}px`;
+
+            if (Math.abs(start - end) < 1) {
+                while (element.scrollHeight > element.offsetHeight) {
+                    size--;
+                    element.style.fontSize = `${size}px`;
+                }
+                return;
+            }
+
+            if (element.scrollHeight > element.offsetHeight) {
+                fitElement(element, start, size);
+            } else {
+                fitElement(element, size, end);
+            }
+        }
+
+        document.onreadystatechange = () => {
+            fitElements();
+            if (document.readyState === 'complete') {
+                if (pageInIframe() && window.location.href.indexOf("?export") != -1){
+                    parent.postMessage(event.target.location.href, "app://obsidian.md");
+                }
+                if (window.location.href.indexOf("print-pdf") != -1){
+                    let stateCheck = setInterval(() => {
+                        clearInterval(stateCheck);
+                        window.print();
+                    }, 250);
+                }
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Självförsvar mot övervakning - en praktisk guide för aktivister
+
+
+https://0x23.se/workshop/slides.html
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### > whoami
+* Markus
+* Aktiv inom IMÄI sen 2024
+* "Jobbar med internet"
+	* Utvecklare på en VPN-tjänst
+	* Digital säkerhet är hela produkten
+* Växte upp på ett modem
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Agenda
+- Vad är övervakning?
+- Vad är säkerhet?
+	- Fysisk
+	- Digital
+- Hotmodeller
+- Vad kan vi göra för att motstå övervakning?
+</div>
+
+<aside class="notes"><ul>
+<li>Vi kommer först att få lite bakgrund på temat övervakning, ur både ett svenskt och internationellt perskeptiv. Lite begrepp som kan vara bra att ha med sig och så.</li>
+<li>Sen kommer vi gå vidare och prata om olika typer av säkerhet, vilken roll säkerhet har i relation till övervakning, och hur man kan bedöma vilken nivå man bör lägga sig på genom att utgå från olika scenarion (eller hotbilder).</li>
+<li>Och sen mot slutet ska kommer jag ge väldigt konkreta tips på hur man kan skydda sig mot övervakning utifrån sin hotbild.
+Låt mig börja med att måla upp en bild</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Vad är övervakning?
+<img src="IMÄI/Workshop/images/kamera.png" alt="" style="width: 500px; object-fit: fill">
+</div>
+
+<aside class="notes"><p>Alla har känt känslan av att vara övervakad. Någon iaktar dig, tjuvlyssnar. Ibland är det väldigt obvious, ibland får du reda på det först i efterhand.</p>
+<p>Det gör att man kan bli: rädd, ledsen, nervös, paranoid, medan det vanligaste argumentet för att använda övervakning är det motsatta: vi övervakar för att ge trygghet, skydda någon eller någonting. Övervakning på allmäna platser ska fungera som en trygghet mot brott och övergrepp. Men i dom argumenten skiner den repressiva, förtryckande kraften igenom: övervakning ska hindra människor från att begå vissa handlingar. För en kamera skyddar inte mot någon som faktiskt utför en handling, går till attack, klottrar, slår in ett fönster. Poängen är att pacificera, och kunna straffa vid ett annat tillfälle än när övervakningen i sig sker. Annan övervakning finns till för att tvinga fram vissa beteenden från folk, exempelvis minutstyrningen av hemtjänstpersonal, eller cykelbudet, eller lagerarbetaren. Censur är ett ett annat vanligt ändamål med övervakning, men vi återkommer till det när jag ska prata mer om internet.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Vem övervakar?
+### Vem övervakas?
+### Vad övervakas?
+</div>
+
+<aside class="notes"><p>Vem är det då som övervakar, vilka och i vilket syfte? Och hur går övervakning till?</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+#### [AI-assisted targeting in the Gaza Strip](https://en.wikipedia.org/wiki/AI-assisted_targeting_in_the_Gaza_Strip)
+<img src="IMÄI/Workshop/images/heron-drone.jpg" alt="" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Ett mycket skrämmande exempel kommer från Palestina. Israel spelade in internettrafik från Gazaremsan och Västbanken i syfte att kartlägga Palestinska män, och om dom kunde tros ha samröre med Hamas. Tro är viktigt här, för i princip all internettrafik idag är krypterad, vilket betyder att det i princip är omöjligt att läsa av det faktiska innehållet i exempelvis ett meddelande, vad någon gör på en hemsida osv. Men baserat på <em>vart internettrafiken var påväg</em>, &amp;
+<em>med vilken frekvens</em> och annan <em>omkringliggande information</em> identifierade och klassificerade en A.I. potentiella hot. Om ett mål kom över en viss poäng så bombade Israel platsen med drönare.</p>
+<p>Det här är ett exempel på när övervakning används för att samla in så kallad metadata. Metadata är <em>information om data</em>, snarare än datan i sig. Ni kan föreställa er att kuvertet runt ett brev är metadatan, medans brevet (själva kommunikationen) är datan. Brevbäraren vet såklart vem du vill prata med, när, hur mycket brevet väger osv.</p>
+<p>Insamling av metadata i övervakningssyfte har tyvärr blivit mycket mer användbart i takt med att A.I. utvecklats. Anledningen till det är det ofta gömmer sig mönster i metadata, och givet nog mycket data och avancerade A.I. modeller kan man någon dra slutsatser utifrån dom här mönstrena. Och ibland behövs inte alls många datapunkter - att några här tackat ja till facebook-eventet för idag visar att ni har samröre med varandra, och att det är i ett vänsterautonomt sammanhang.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+["The U.S. government 'kill[s] people based on metadata'" - Michael Hayden, Ex-NSA Chief circa 2014](https://abcnews.com/blogs/headlines/2014/05/ex-nsa-chief-we-kill-people-based-on-metadata/)
+</div>
+
+<aside class="notes"><p>Citat från en föredetta chef på USAs nationella säkerhetsmyndighet, NSA.</p>
+<p>Om man inte hängt med varför USA tvingat Edward Snowden i exil, så beror det på att han avslöjade att NSA, tillsammans med några andra gamla brittiska kolonier, avlyssnade telefonsamtal och fiberoptiska kablar som alltså bar internettrafik.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Sverige
+</div>
+
+<aside class="notes"><p>Sverige har en brokig historia när det kommer till övervakning</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### IB-affären
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcached-images.bonnier.news%2Fgcs%2Fbilder%2Fepi-30-dn%2FUploadedImages%2F2014%2F1%2F5%2F98c1ca48-b3a6-41ea-8686-e999020100c5%2Foriginal.jpg%3Finterpolation%3Dlanczos-none%26fit%3Dinside%257C1010%3A569%26output-quality%3D80&f=1&nofb=1&ipt=0c9df6ad677c67696e53c85e9e5249621e7d8721f61811da0efaf027de359f2c" alt="" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Jan Guillos karriär tog verkligen fart när han avslöjade den så kallade &quot;Informationsbyrån&quot;, en hemlig underrättelsetjänst som bland annat avlyssnade &quot;förmodade&quot; kommunister, för att kartlägga om dom hade några internationella anknytningar. Den här typen av politisk kartläggning skedde alltså in på 70-talet.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Svensk lag
+- 1992 - [Yttrandefrihet skrivs in i grundlagen](https://sv.wikipedia.org/wiki/Yttrandefrihetsgrundlagen)
+- 1993 - [Telelagen](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/telelag-1993597_sfs-1993-597/)
+- 2008 - [FRA-lagen](https://sv.wikipedia.org/wiki/FRA-lagen)
+- 2024 - [Utökade möjligheter att använda preventiva tvångsmedel vid brottsbekämpning](https://www.riksdagen.se/sv/dokument-och-lagar/dokument/betankande/preventiva-tvangsmedel-for-att-forebygga-och_hb01juu24/)
+- 2025 - [Hemliga och preventiva tvångsmedel mot barn under 15 år](https://www.regeringen.se/pressmeddelanden/2025/10/hemliga-och-preventiva-tvangsmedel-mot-barn-under-15-ar--lagandringar-trader-i-kraft/)
+</div>
+
+<aside class="notes"><p>1991 - Yttrandefrihet skrivs in i grundlagen.</p>
+<ul>
+<li>Alla medborgare har rätt att uttrycka sina åsikter, tankar, känslor i radio, tv, videogram, ljudupptagningar eller andra sorters upptagningar.</li>
+<li>Den som är <a href="https://sv.wikipedia.org/wiki/Upphovsman" title="Upphovsman">upphovsman</a> till ett radioprogram, tv-program eller liknande har rätt att vara <a href="https://sv.wikipedia.org/wiki/Anonym" title="Anonym">anonym</a>.
+1993 - Telelagen, &quot;Den som beviljas tillstånd att bedriva televerksamhet, ska bedriva den så att beslut om hemlig teleavlyssning och hemlig teleövervakning kan verkställas och så att verkställandet inte röjs.&quot;
+2008 - FRA-lagen
+Också kallad signalspaningslagen. All &quot;kabelburen trafik&quot; som korsar landsgränsen har FRA, Försvarets radioanstalt (Sveriges motsvarighet till NSA), har rätt att spela in och analysera i spaningssyfte.
+2024 - Utökade möjligheter att använda preventiva tvångsmedel vid brottsbekämpning
+Brottsbekämpande myndigheter får utökade möjligheter att använda preventiva tvångsmedel, vilket betyder att en person kan avlyssnas utan att han eller hon vet om det, även om det inte finns en konkret brottsmisstanke. Tidigare fick preventiv avlyssning enbart användas för att förhindra terrorism och spioneri. Lagen fick mycket kritik för att vara rättsosäker.
+2025 - Samma lag utvidgas till att även omfatta barn under 15 år. Motivering till det är att komma åt barn som riskerar att rekryteras till gäng och begå grova brott.</li>
+</ul>
+<p>Alla dom här lagarna gäller fortfarande. Det är mycket lättare att tillåta något än det är att avveckla det i framtiden.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+[Arbetsförmedlingen spårar arbetslösas IP-adresser](https://www.dn.se/sverige/tusentals-arbetslosa-har-sparats-via-sina-ip-adresser/)
+
+<img src="IMÄI/Workshop/images/arbetsformedlingen.jpg" alt="" style="width: 400px; object-fit: fill">
+</div>
+
+<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Kapitalism ❤️ datainsamling
+</div>
+
+<aside class="notes"><p>Vinstdrivande företag bygger upp enorma övervakningsmaskiner i syfte att tjäna pengar - det vanligaste är genom att sälja riktad reklam som driver på konsumtion. Google har inte varit primärt en sökmotor på väldigt länge, utan dom är ett reklambolag. Vad dom här bolagen bygger upp är enormt värdefulla verktyg för stater, och dom får konsumenterna att vänja sig vid tanken på att vara övervakade. Sen finns det självklart rena krigsprofitörer.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+[Dagens ETC: Polisens hemliga samarbete med spionbolaget Palantir](https://www.etc.se/story/dagens-etc-avsloejar-polisens-hemliga-samarbete-med-spionbolaget-palantir)
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.publisher-live.etc.nu%2Fswp%2Fuc3g8l%2Fmedia%2F20251031141024_8b936593e93954e28041ca2d6b7637981a7d4b913b85d8fd7ccd4a68823e12c1.jpg" alt="&f=1&nofb=1&ipt=5ef6cda1199420900f22bb109197b0fe3f041ba2ef9460fae96ee45cb19367a0" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Ett exempel som blivit känt relativt nyligen är övervakningsföretaget Palantir. Palantir säljer AI-modeller och databassystem till stater och militärer i västvärlden, och är precis ett sånt bolag som möjliggör Israels kartläggning av förmodade Hamas-anhängare som jag inledde den här presentationen med. Den svenska polisen vill inte erkänna samarbetet, men det har alltså läckt att Palantir är verksamma i Sverige. I andra länder, exempelvis Danmark, är det iallafall publikt att Palantir samarbetar med deras polis. I USA jobbar Palantir tätt med ICE för att kartlägga papperslösa. Så vad gör Palantir här i Sverige? Dom bygger upp ett register över i princip alla svenska medborgares aktivitet på internet. Läs den här artikeln, det är helt sjukt.</p>
+<p>Men missta er inte, det är inte bara storbolag som samlar in all data dom kan komma över.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+[Göteborgs-Posten måste lämna ut uppgifter om läsare till åklagare enligt tingsrättens beslut](https://www.gp.se/nyheter/sverige/tidning-tvingas-lamna-ut-uppgifter-om-lasare.5829d309-56b5-5db8-99aa-8984636e3b0f)
+<img src="https://www.gp.se/images/article/5829d309-56b5-5db8-99aa-8984636e3b0f/images/0atVzIP94bir4cVkECp69beP-B_U-REGULAR.jpg" alt="?width=1920&quality=75" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Den här news-flashen gick nog dom flesta förbi när den kom våren 2024.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+> Ärendet rör en explosion som inträffade våren 2024 i Göteborg. En misstänkt person sitter häktad och under utredningen har åklagaren begärt att Göteborgs-Posten ska lämna ut en förteckning över vilka prenumeranter som läst en artikel om sprängningen mellan två klockslag.
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+> Det rör uppgifter om namn, personnummer, registrerade kontaktuppgifter och vid tillfället använda IP-adresser, skriver [Dagens Juridik](https://www.dagensjuridik.se/nyheter/gp-tvingas-lamna-ut-uppgifter-om-lasare-till-aklagare/).
+</div>
+
+<aside class="notes"><p>Jag prenumererade på GP när den här nyheten kom. Det förvånade mig egentligen inte att GP hade all den här informationen om sina läsare, men jag fick mig en tankeväckare: varje artikel som jag läser skulle kunna vara intressant för polisen, och då kan dom ha rätt att se att just jag läst den artikeln, när jag läste den och vart jag befann mig.</p>
+<p>Så jag använde GDPR för att begära ut all information som GP hade om mig, och jag fick tillbaka en Excel-fil där varje rad visade vad jag hade gjort i deras nyhets-app.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Säkerhet
+
+- Fysisk
+- Digital
+</div>
+
+<aside class="notes"><p>Nu lämnar vi övervakning en liten stund. Vi ska prata säkerhet, åtgärder och vanor som göra övervakning ineffektivt. Jag pratar alltså inte om säkerhet som &quot;trygghet&quot;, det som myndigheter och polis försöker motivera mer övervakning med.</p>
+<p>Jag kommer att prata om vad jag kallar fysisk säkerhet, alltså det som har med det fysiska rummet att göra (basically offline), och digital säkerhet som är lätt att uppfatta som mer abstrakt då den ofta är osynlig.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Fysisk säkerhet
+
+- Var medveten om var du syns
+- Var medveten om var du hörs
+- "principle of least privilege"
+- "Loose lips sink ships"
+</div>
+
+<aside class="notes"><p>&quot;principle of least privilege&quot;: Vem som har tillgång till vad, och generellt begränsa tillgången till information eller rum så mycket som möjligt. Det spelar såklart roll <em>vem</em> eller <em>vilka</em> som har tillgång. Det måste finnas en viss nivå av tillit, och den här principen säger att begränsa tilliten som behövs så mycket som möjligt.</p>
+<p>Ju färre som har tillgång till ett rum, desto säkrare kan du vara på att ett rum inte kommer genomlysas / buggas.
+Ju färre som vet något, desto mindre tillit behöver finnas att den informationen läcker.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Digital säkerhet
+
+- Ha koll på tekniken du använder
+	- Använd open source
+	- "Don't trust, verify"
+- Uppkopplade tjänster kräver att du avslöjar dig själv
+	- Identitet (användarnamn, mail, personnummer)
+	- Plats (IP-address, GPS)
+	- Syfte (webbplatsbesök, mailtråd, filmtittande)
+- ~Alla webbtjänster har en digital profil av dig - ["fingerprinting"](https://coveryourtracks.eff.org/)
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Digital säkerhet (forts.)
+
+Mobilen är den största (teoretiska) säkerhetsrisken som någonsin funnits
+
+- Alltid på dig
+- Alltid påslagen
+- Alltid uppkopplad
+- Kopplad till dig personligen
+- Nedlåsta operativsystem
+- Kamera och mikrofon går sällan att slå av fysiskt
+</div>
+
+<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Hotmodeller
+
+* Vad vill du skydda?
+* Vem vill du skydda det ifrån?
+* Vad är sannolikheten att du måste skydda det?
+* Vad är konsekvenserna om du misslyckas?
+* Vad är du villig att göra för att förhindra dessa konsekvenser?
+</div>
+
+<aside class="notes"><p>Hotmodeller är . . För att etablera en hotmodell kan man ställa sig 5 frågor: <em>rabbla upp dom</em></p>
+<ul>
+<li><p>Vad vill du skydda?
+When we are talking about digital security, what’s at stake is usually information, for example, your emails, files, and text messages. You also may want to guard against someone impersonating you, say by sending out emails from your account.</p>
+</li>
+<li><p>Vem vill du skydda det ifrån?
+think about who might want to target you or your information. Adversaries are people or entities that pose a threat to your information. Examples of potential adversaries are your boss, your government, or a hacker on a public network.</p>
+</li>
+<li><p>Vad är sannolikheten att du måste skydda det?
+The capability of your attacker is also an important thing to think about. For example, your mobile phone provider has access to all of your phone records and therefore has the capability to use that data against you. A hacker on an open Wi-Fi network can access your unencrypted communications. Your government likely has stronger capabilities.</p>
+</li>
+</ul>
+<p>Risk is the likelihood that a particular threat against a particular asset will occur, and goes hand-inhand with capability. For example, while your mobile phone provider has the capability to access all of your data, the risk of them posting your private data online to harm your reputation is low.</p>
+<ul>
+<li>Vad är konsekvenserna om du misslyckas?
+A corporation trying to track your shopping habits may be content to simply sell that information to another corporation or use it for marketing purposes, whereas a government may wish to gain access to communications in order to harass, arrest, or even kill political activists.</li>
+<li>Vad är du villig att göra för att förhindra dessa konsekvenser?
+Ask yourself which threats you are going to take seriously, and which may be too rare or too harmless (or too difficult to combat) to worry about.</li>
+</ul>
+<p><a href="https://www.eff.org/files/2015/11/24/3mod_threat-modeling-ssd_9-3-15.pdf">https://www.eff.org/files/2015/11/24/3mod_threat-modeling-ssd_9-3-15.pdf</a></p>
+<p><a href="https://ssd.eff.org/playlist/want-security-starter-pack">https://ssd.eff.org/playlist/want-security-starter-pack</a></p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+"Perfect is the enemy of good"
+</div>
+
+<aside class="notes"><p>En viktig poäng är just att man ska försöka lägga sig på rätt nivå av åtgärder för att skydda sig från ett visst hot, då åtgärderna ofta innebär någon form av uppoffring: tid, pengar, bekvämlighet. Ingen kan vara 100% säker mot alla hot, hela tiden. Hot är då händelser som riskerar att ogöra det arbete du lagt ner på att skydda din data.</p>
+<p>Det är ofta bättre att göra någonting än ingenting.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Vad kan vi göra för att motstå övervakning?
+</div>
+
+<aside class="notes"><p>Här är bara konkreta tips</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Kommunikation
+</div>
+
+<aside class="notes"><p>Använd krypterade chattar </p>
+<ul>
+<li>Signal</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="Pasted image 20260418105653.png" alt="" style="width: 300px; object-fit: fill">
+
+- End-to-end-kryptering
+	- Behöver inte lita på Signals servrar!
+- Kräver Telefonnummer för kontoregistrering
+- Behöver inte dela telefonnummer med kontakter
+	- Användarnamn räcker
+- Signal Foundation - en non-profit skapad av anarkister
+- Open source
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Internet
+
+- Vad är en IP-address?
+	- En address, duh
+	- Varje hemsida/tjänst har en känd IP-address
+	- Varje enhet har en associerad IP-address
+	- IP-addresser går enkelt att spåra till fysiska platser
+- Använd adblockers
+	- uBlock Origin
+- Nästan all internettrafik är idag krypterad
+	- Surfa bara med [HTTPS](https://www.eff.org/https-everywhere)
+</div>
+
+<aside class="notes"><p>Surfa bara med HTTPS, (det gröna hänglåset i webbläsaren)</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### VPN
+
+- Döljer din enhets IP-address (ut mot internet)
+	- Som en målvakt för din IP-address
+- Kringår censurerade nätverk
+	- Kommer åt hemsidor som annars blockeras
+- Generellt ett svagt skydd mot övervakning
+	- Fingerprinting gäller fortfarande
+	- Cookies spårar dig ändå
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### <img src="IMÄI/Workshop/images/tor.png" alt="" style="width: 250px; object-fit: fill">
+
+- Anonymiserande nätverket
+	- Drivs av volontärer & statsmakter
+- En webbläsare
+	- All kommunikation är krypterad
+	- Anti-fingerprinting inbyggt
+- Övervakas kraftigt
+- Anonymitet är proportionerligt mot antal användare
+	- Alla borde använda Tor i solidaritet med ..
+</div>
+
+<aside class="notes"><p>Tor är ett projekt som är superviktigt för att kringå censur och övervakning på internet. Det består egentligen av två delar:</p>
+<ul>
+<li>Tor-nätverket är som ett helt separat internet som drivs av volontärer och diverse statsmakter (och då menar jag alla servrar). Lite klumpigt uttryckt är det vad som i folkmun kallas &quot;dark net&quot; eller &quot;deep web&quot;</li>
+<li>En webbläsare. Den är baserad på Firefox, och den gör det enkelt att komma in i Tor-nätverket. Man kan även använda webbläsaren för att sufra på vanliga internet också.
+Trafik i tor-nätverket övervakas super-noggrant på grund av att det är mycket brottslighet som begås på dark net (droghandel, vapenhandel osv). Men TOR ger fortfarande ett väldigt bra skydd mot massövervakning på internet, och jag kommer att förklara bättre varför i workshoppen nästa timme.</li>
+</ul>
+<p>TOR-projektet uppmanar även folk som inte lever under censur eller riktad övervakning att använda TOR, då det skyddar dom människor som faktiskt behöver komma åt internet på ett anonymt sätt. Det är samma argument som varför alla borde använda kontanter. Om det bara är utsatta grupper som använder kontanter blir det enklare för polisen att spåra dom, enbart på egenskapen att dom använder kontanter.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Mail
+
+- Okrypterat
+	- [By design - läs mer i RFC 5321](https://www.rfc-editor.org/rfc/rfc5321.html)
+	- Den som påstår något annat ljuger
+	- Google läser dina mail om du har ett gmail-konto
+	- Google läser dina mail om den du mailar har ett gmail-konto
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Mail
+
+- Mailaddress kan inte anses vara hemlig, men använd gärna flera
+	- Mail-forwarding
+- Mail kan innehålla kod som körs när du öppnar det
+	- Vettiga mailklienter blockar så klart det som standard (inte gmail)
+- Öppna inte PDF:er utan att tänka 2 gånger
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Kontosäkerhet
+
+- Använd en lösenordshanterare 🙏
+	- Det finns inga ursäkter.
+	- Bitwarden
+- Använd 2-faktorsautentisering
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Telefoner/datorer
+
+- Blanda *aldrig* ihop jobbtelefon med personlig telefon!
+- SMS/telefonsamtal är osäkert (enl. Telelagen)
+- Koppla aldrig upp mot internet om du inte måste
+- Telefoner kan spåras genom telefonmaster
+- Använd "burner"-enheter för känsliga situationer
+- Om en burner-enhet kopplas upp i närheten av andra enheter kan den korreleras med dig
+	- Aktivera aldrig nya telefoner åt papperslösa i närheten av andra enheter
+- Använd heldiskkryptering
+</div>
+
+<aside class="notes"><ul>
+<li>Blanda <em>aldrig</em> ihop jobbtelefon med personlig telefon!<ul>
+<li>Segmentera utifrån din(a) hotmodell(er)</li>
+</ul>
+</li>
+<li>SMS/telefonsamtal är spaningsbart enligt Telelagen.</li>
+<li>Använd &quot;burner&quot;-enheter för känsliga situationer</li>
+<li>Koppla aldrig upp mot internet om du inte måste</li>
+<li>Telefoner kan spåras genom telefonmaster (triangulering)</li>
+<li>Om en burner-enhet kopplas upp i närheten av andra enheter kan den korreleras med dig<ul>
+<li>Aktivera aldrig nya telefoner åt papperslösa i närheten av andra enheter</li>
+</ul>
+</li>
+<li>Använd heldiskkryptering<ul>
+<li>Ifall din enhet beslagtas så</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### På demontrationen
+
+- Maskera utmärkande drag
+	- Ansikte
+	- Hår
+	- Tatueringar
+- Gör upp en plan med andra demonstranter som inte kräver live-koordinering
+- Om mobilen är med, slå av biometrik (FaceID / fingeravtryck för upplåsning)
+- Foton tagna med mobilkamera innehåller dold metadata
+	- Tips: Signal skrubbar bort metadatan 🧽
+</div>
+
+<aside class="notes"></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Sammanfattning
+
+- Vanor
+- Motstånd är solidaritet
+- Hotmodeller
+- Open source
+	- "Don't trust, verify"
+- Lämna mobilen hemma
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" template="" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Länkar
+
+- [Electronic Frontier Foundation - Surveillance Self-Defense](https://ssd.eff.org/)
+- [Tor Project - Surveillance as a Service: The Global Impact of Israeli “Defense” Technologies on Privacy and Human Rights](https://blog.torproject.org/surveillance-as-a-service-global-impact-of-israeli-defense-technologies-on-privacy-human-rights/)
+-  [Free Software Foundation - From pro-democracy activists to minorities: Why people use Tor and encrypted chats](https://www.fsf.org/blogs/community/from-pro-democracy-activist-to-minorities-why-people-use-tor-and-encrypted-chats)
+- [wikiHow - How to defend yourself](https://www.wikihow.com/Defend-Yourself)
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/obsidian-markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chart/chart.umd.js"></script>
+    <script src="plugin/chart/plugin.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
+
+
+    <script>
+        function extend() {
+            const target = {};
+            for (let i = 0; i < arguments.length; i++) {
+                const source = arguments[i];
+                for (const key in source) {
+                    if (source.hasOwnProperty(key)) {
+                        target[key] = source[key];
+                    }
+                }
+            }
+            return target;
+        }
+
+        function isLight(color) {
+            let hex = color.replace('#', '');
+
+            // convert #fff => #ffffff
+            if (hex.length == 3) {
+                hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+            }
+
+            const c_r = parseInt(hex.substr(0, 2), 16);
+            const c_g = parseInt(hex.substr(2, 2), 16);
+            const c_b = parseInt(hex.substr(4, 2), 16);
+            const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+            return brightness > 155;
+        }
+
+        const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+        if (isLight(bgColor)) {
+            document.body.classList.add('has-light-background');
+        } else {
+            document.body.classList.add('has-dark-background');
+        }
+
+        // default options to init reveal.js
+        const defaultOptions = {
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'default', // none/fade/slide/convex/concave/zoom
+            plugins: [
+                ObsidianMarkdown,
+                RevealHighlight,
+                RevealZoom,
+                RevealNotes,
+                RevealMath.KaTeX,
+                RevealMermaid,
+                RevealChart,
+                RevealCustomControls,
+            ],
+            allottedTime: "120",
+
+            katex: {
+                local: 'plugin/math/katex',
+                extensions: ["mhchem"],
+            },
+            markdown: {
+                gfm: true,
+            },
+            mermaid: {
+                theme: isLight(bgColor) ? 'default' : 'dark',
+            },
+            customcontrols: {
+                controls: [
+                ]
+            },
+        };
+
+        if ( pageInIframe() ) {
+            defaultOptions.scrollActivationWidth = 5;
+        }
+
+        // options from URL query string
+        const queryOptions = Reveal().getQueryHash() || {};
+
+        const options = extend(defaultOptions, {"controls":true,"progress":true,"slideNumber":false,"center":true,"transition":"slide","transitionSpeed":"default","width":960,"height":700,"margin":0.04}, queryOptions);
+    </script>
+
+    <script>
+      /**
+       * KaTeX Equation Numbering Note
+       * 
+       * KaTeX maintains a global equation counter for \begin{equation} environments.
+       * When navigating between slides, reveal.js math plugin may re-render math, causing 
+       * equation numbers to change randomly.
+       * 
+       * Note: Regular $$ blocks don't have equation numbers - only \begin{equation} does.
+       * 
+       * If you experience issues with equation numbers changing:
+       * Use manual \tag{} commands: \begin{equation}\tag{1} ... \end{equation}
+       */
+      
+      Reveal.initialize(options);
+    </script>
+    <!-- created with Slides Extended reveal.html template -->
+</body>
+</html>
