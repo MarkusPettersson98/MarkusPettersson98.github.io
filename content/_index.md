@@ -8,7 +8,7 @@ Fuck authority. Do crime: Be gay, hide a refugee, circumvent state & corporate c
 
 Socialist, activist, privacy- and free software advocate. Focusing on things that makes me happy.
 
-Developer @ Mullvad. Rust by day. Eyeing Zig by night. Low key jealous of Gleam devs.
+Rust by day. Eyeing Zig by night. Low key jealous of Gleam devs.
 
 Contact me at `hi 'at' 0x23.se`
 
